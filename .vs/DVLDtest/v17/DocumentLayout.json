@@ -1,0 +1,274 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Programmin Advice\\Project 19\\DVLDtest\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B8B166B6-54BB-4ACA-8A6B-31610AD40235}|DVLDtest.csproj|d:\\programmin advice\\project 19\\dvldtest\\people\\frmpersonform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B8B166B6-54BB-4ACA-8A6B-31610AD40235}|DVLDtest.csproj|solutionrelative:people\\frmpersonform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8B166B6-54BB-4ACA-8A6B-31610AD40235}|DVLDtest.csproj|d:\\programmin advice\\project 19\\dvldtest\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B8B166B6-54BB-4ACA-8A6B-31610AD40235}|DVLDtest.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8B166B6-54BB-4ACA-8A6B-31610AD40235}|DVLDtest.csproj|d:\\programmin advice\\project 19\\dvldtest\\people\\frmpersonform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B8B166B6-54BB-4ACA-8A6B-31610AD40235}|DVLDtest.csproj|solutionrelative:people\\frmpersonform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8B166B6-54BB-4ACA-8A6B-31610AD40235}|DVLDtest.csproj|D:\\Programmin Advice\\Project 19\\DVLDtest\\people\\ucpersonalcard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B8B166B6-54BB-4ACA-8A6B-31610AD40235}|DVLDtest.csproj|solutionrelative:people\\ucpersonalcard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Programmin Advice\\C# And ADO.NET 18\\Projects\\Book Project\\Book_Windows_Forms_App\\UserControlesMainAdmin\\Book\\BookForm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8B166B6-54BB-4ACA-8A6B-31610AD40235}|DVLDtest.csproj|d:\\programmin advice\\project 19\\dvldtest\\people\\ucpersonalcard.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B8B166B6-54BB-4ACA-8A6B-31610AD40235}|DVLDtest.csproj|solutionrelative:people\\ucpersonalcard.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8B166B6-54BB-4ACA-8A6B-31610AD40235}|DVLDtest.csproj|d:\\programmin advice\\project 19\\dvldtest\\people\\ucshowpeople.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B8B166B6-54BB-4ACA-8A6B-31610AD40235}|DVLDtest.csproj|solutionrelative:people\\ucshowpeople.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8B166B6-54BB-4ACA-8A6B-31610AD40235}|DVLDtest.csproj|D:\\Programmin Advice\\Project 19\\DVLDtest\\people\\ucshowpeople.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B8B166B6-54BB-4ACA-8A6B-31610AD40235}|DVLDtest.csproj|solutionrelative:people\\ucshowpeople.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8B166B6-54BB-4ACA-8A6B-31610AD40235}|DVLDtest.csproj|D:\\Programmin Advice\\Project 19\\DVLDtest\\frmhomepage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B8B166B6-54BB-4ACA-8A6B-31610AD40235}|DVLDtest.csproj|solutionrelative:frmhomepage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D7CC0526-ED68-4370-A2B9-D05FE656110F}|..\\DataLayerDVLD\\DataLayerDVLD.csproj|d:\\programmin advice\\project 19\\datalayerdvld\\clsdatacountry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E3ECE163-733E-4DCE-BFFA-83A1B8D0A371}|..\\LogicLayerDVLD\\LogicLayerDVLD.csproj|d:\\programmin advice\\project 19\\logiclayerdvld\\clscountry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D7CC0526-ED68-4370-A2B9-D05FE656110F}|..\\DataLayerDVLD\\DataLayerDVLD.csproj|d:\\programmin advice\\project 19\\datalayerdvld\\clsdataperson.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E3ECE163-733E-4DCE-BFFA-83A1B8D0A371}|..\\LogicLayerDVLD\\LogicLayerDVLD.csproj|d:\\programmin advice\\project 19\\logiclayerdvld\\clsperson.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Programmin Advice\\C# And ADO.NET 18\\Projects\\Book Project\\Book_Windows_Forms_App\\UserControlesMainAdmin\\Book\\ShowBooks.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8B166B6-54BB-4ACA-8A6B-31610AD40235}|DVLDtest.csproj|D:\\Programmin Advice\\Project 19\\DVLDtest\\people\\ucshowpeople.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B8B166B6-54BB-4ACA-8A6B-31610AD40235}|DVLDtest.csproj|solutionrelative:people\\ucshowpeople.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8B166B6-54BB-4ACA-8A6B-31610AD40235}|DVLDtest.csproj|D:\\Programmin Advice\\Project 19\\DVLDtest\\frmhomepage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B8B166B6-54BB-4ACA-8A6B-31610AD40235}|DVLDtest.csproj|solutionrelative:frmhomepage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "frmPersonForm.cs",
+              "DocumentMoniker": "D:\\Programmin Advice\\Project 19\\DVLDtest\\People\\frmPersonForm.cs",
+              "RelativeDocumentMoniker": "People\\frmPersonForm.cs",
+              "ToolTip": "D:\\Programmin Advice\\Project 19\\DVLDtest\\People\\frmPersonForm.cs",
+              "RelativeToolTip": "People\\frmPersonForm.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAAABwAAAA3AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-02T04:59:06.471Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ucPersonalCard.cs [Design]",
+              "DocumentMoniker": "D:\\Programmin Advice\\Project 19\\DVLDtest\\People\\ucPersonalCard.cs",
+              "RelativeDocumentMoniker": "People\\ucPersonalCard.cs",
+              "ToolTip": "D:\\Programmin Advice\\Project 19\\DVLDtest\\People\\ucPersonalCard.cs [Design]",
+              "RelativeToolTip": "People\\ucPersonalCard.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-02T03:36:16.071Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "frmPersonForm.cs [Design]",
+              "DocumentMoniker": "D:\\Programmin Advice\\Project 19\\DVLDtest\\People\\frmPersonForm.cs",
+              "RelativeDocumentMoniker": "People\\frmPersonForm.cs",
+              "ToolTip": "D:\\Programmin Advice\\Project 19\\DVLDtest\\People\\frmPersonForm.cs [Design]",
+              "RelativeToolTip": "People\\frmPersonForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-02T04:19:15.006Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Programmin Advice\\Project 19\\DVLDtest\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\Programmin Advice\\Project 19\\DVLDtest\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAQAAAAAAAAAAAAAwBcAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-02T04:31:13.696Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "BookForm.cs",
+              "DocumentMoniker": "D:\\Programmin Advice\\C# And ADO.NET 18\\Projects\\Book Project\\Book_Windows_Forms_App\\UserControlesMainAdmin\\Book\\BookForm.cs",
+              "RelativeDocumentMoniker": "..\\..\\C# And ADO.NET 18\\Projects\\Book Project\\Book_Windows_Forms_App\\UserControlesMainAdmin\\Book\\BookForm.cs",
+              "ToolTip": "D:\\Programmin Advice\\C# And ADO.NET 18\\Projects\\Book Project\\Book_Windows_Forms_App\\UserControlesMainAdmin\\Book\\BookForm.cs",
+              "RelativeToolTip": "..\\..\\C# And ADO.NET 18\\Projects\\Book Project\\Book_Windows_Forms_App\\UserControlesMainAdmin\\Book\\BookForm.cs",
+              "ViewState": "AQIAABYAAAAAAAAAAAAswDUAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-01T16:07:21.295Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ucPersonalCard.Designer.cs",
+              "DocumentMoniker": "D:\\Programmin Advice\\Project 19\\DVLDtest\\People\\ucPersonalCard.Designer.cs",
+              "RelativeDocumentMoniker": "People\\ucPersonalCard.Designer.cs",
+              "ToolTip": "D:\\Programmin Advice\\Project 19\\DVLDtest\\People\\ucPersonalCard.Designer.cs",
+              "RelativeToolTip": "People\\ucPersonalCard.Designer.cs",
+              "ViewState": "AQIAAFsAAAAAAAAAAAAawG0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-02T04:23:46.18Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ucShowPeople.cs",
+              "DocumentMoniker": "D:\\Programmin Advice\\Project 19\\DVLDtest\\People\\ucShowPeople.cs",
+              "RelativeDocumentMoniker": "People\\ucShowPeople.cs",
+              "ToolTip": "D:\\Programmin Advice\\Project 19\\DVLDtest\\People\\ucShowPeople.cs",
+              "RelativeToolTip": "People\\ucShowPeople.cs",
+              "ViewState": "AQIAAB8AAAAAAAAAAAAIwCsAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-01T03:36:53.508Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ucShowPeople.cs [Design]",
+              "DocumentMoniker": "D:\\Programmin Advice\\Project 19\\DVLDtest\\People\\ucShowPeople.cs",
+              "RelativeDocumentMoniker": "People\\ucShowPeople.cs",
+              "ToolTip": "D:\\Programmin Advice\\Project 19\\DVLDtest\\People\\ucShowPeople.cs [Design]",
+              "RelativeToolTip": "People\\ucShowPeople.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-30T05:41:52.047Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "frmHomePage.cs [Design]",
+              "DocumentMoniker": "D:\\Programmin Advice\\Project 19\\DVLDtest\\frmHomePage.cs",
+              "RelativeDocumentMoniker": "frmHomePage.cs",
+              "ToolTip": "D:\\Programmin Advice\\Project 19\\DVLDtest\\frmHomePage.cs [Design]",
+              "RelativeToolTip": "frmHomePage.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-30T05:16:34.814Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "clsDataCountry.cs",
+              "DocumentMoniker": "D:\\Programmin Advice\\Project 19\\DataLayerDVLD\\clsDataCountry.cs",
+              "RelativeDocumentMoniker": "..\\DataLayerDVLD\\clsDataCountry.cs",
+              "ToolTip": "D:\\Programmin Advice\\Project 19\\DataLayerDVLD\\clsDataCountry.cs",
+              "RelativeToolTip": "..\\DataLayerDVLD\\clsDataCountry.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAAAAC4AAAA2AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-01T17:03:18.098Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "clsCountry.cs",
+              "DocumentMoniker": "D:\\Programmin Advice\\Project 19\\LogicLayerDVLD\\clsCountry.cs",
+              "RelativeDocumentMoniker": "..\\LogicLayerDVLD\\clsCountry.cs",
+              "ToolTip": "D:\\Programmin Advice\\Project 19\\LogicLayerDVLD\\clsCountry.cs",
+              "RelativeToolTip": "..\\LogicLayerDVLD\\clsCountry.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-01T17:07:11.084Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "clsDataPerson.cs",
+              "DocumentMoniker": "D:\\Programmin Advice\\Project 19\\DataLayerDVLD\\clsDataPerson.cs",
+              "RelativeDocumentMoniker": "..\\DataLayerDVLD\\clsDataPerson.cs",
+              "ToolTip": "D:\\Programmin Advice\\Project 19\\DataLayerDVLD\\clsDataPerson.cs",
+              "RelativeToolTip": "..\\DataLayerDVLD\\clsDataPerson.cs",
+              "ViewState": "AQIAAGQBAAAAAAAAAAAAAIABAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-01T03:41:34.232Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "clsPerson.cs",
+              "DocumentMoniker": "D:\\Programmin Advice\\Project 19\\LogicLayerDVLD\\clsPerson.cs",
+              "RelativeDocumentMoniker": "..\\LogicLayerDVLD\\clsPerson.cs",
+              "ToolTip": "D:\\Programmin Advice\\Project 19\\LogicLayerDVLD\\clsPerson.cs",
+              "RelativeToolTip": "..\\LogicLayerDVLD\\clsPerson.cs",
+              "ViewState": "AQIAAD0AAAAAAAAAAAAYwEsAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-01T03:46:46.878Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ShowBooks.cs",
+              "DocumentMoniker": "D:\\Programmin Advice\\C# And ADO.NET 18\\Projects\\Book Project\\Book_Windows_Forms_App\\UserControlesMainAdmin\\Book\\ShowBooks.cs",
+              "RelativeDocumentMoniker": "..\\..\\C# And ADO.NET 18\\Projects\\Book Project\\Book_Windows_Forms_App\\UserControlesMainAdmin\\Book\\ShowBooks.cs",
+              "ToolTip": "D:\\Programmin Advice\\C# And ADO.NET 18\\Projects\\Book Project\\Book_Windows_Forms_App\\UserControlesMainAdmin\\Book\\ShowBooks.cs",
+              "RelativeToolTip": "..\\..\\C# And ADO.NET 18\\Projects\\Book Project\\Book_Windows_Forms_App\\UserControlesMainAdmin\\Book\\ShowBooks.cs",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAAADQAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-01T16:07:35.795Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ucShowPeople.Designer.cs",
+              "DocumentMoniker": "D:\\Programmin Advice\\Project 19\\DVLDtest\\People\\ucShowPeople.Designer.cs",
+              "RelativeDocumentMoniker": "People\\ucShowPeople.Designer.cs",
+              "ToolTip": "D:\\Programmin Advice\\Project 19\\DVLDtest\\People\\ucShowPeople.Designer.cs",
+              "RelativeToolTip": "People\\ucShowPeople.Designer.cs",
+              "ViewState": "AQIAAKMAAAAAAAAAAAAawLUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-01T04:19:20.1Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "frmHomePage.cs",
+              "DocumentMoniker": "D:\\Programmin Advice\\Project 19\\DVLDtest\\frmHomePage.cs",
+              "RelativeDocumentMoniker": "frmHomePage.cs",
+              "ToolTip": "D:\\Programmin Advice\\Project 19\\DVLDtest\\frmHomePage.cs",
+              "RelativeToolTip": "frmHomePage.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAuwB4AAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-01T04:03:15.674Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
