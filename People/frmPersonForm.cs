@@ -46,6 +46,10 @@ namespace DVLDtest.People
 
 
             }
+            else
+            {
+                this.person = new clsPerson();
+            }
 
 
         }
@@ -60,6 +64,27 @@ namespace DVLDtest.People
             this.personID = personID;
             person = clsPerson.getUserByPersonID(personID);
             stateofForm(person);
+        }
+
+        private void btnSave_Click(object sender, EventArgs e)
+        {
+            person.firstName = txtFirstName.Text;
+            person.secondName = txtSecondName.Text;
+            person.thirdName = txtThirdName.Text;
+            person.lastName = txtLastName.Text;
+            person.phone = txtPhone.Text;
+            person.email = txtEmail.Text;
+            person.nationalNo = txtNationalNo.Text;
+            person.gender = cmbGender.SelectedIndex == 0 ? false : true;
+            person.birthday = DateTime.Parse(dtpBirthday.Text);
+            person.NationalityCountryID = cmbCountry.SelectedIndex+1;
+            person.address = txtAddress.Text;
+            person.imagePath = pbImage.ToString();
+            if (person.save())
+            {
+                MessageBox.Show("This Operation was succeeded");
+            }
+            else { MessageBox.Show("This Operation was failed"); }
         }
     }
 }

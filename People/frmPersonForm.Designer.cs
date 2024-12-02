@@ -53,6 +53,7 @@
             this.pbImage = new System.Windows.Forms.PictureBox();
             this.lnkEdit = new System.Windows.Forms.LinkLabel();
             this.lnkRemove = new System.Windows.Forms.LinkLabel();
+            this.btnSave = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pbImage)).BeginInit();
             this.SuspendLayout();
             // 
@@ -269,11 +270,22 @@
             this.lnkRemove.Text = "Remove";
             this.lnkRemove.Visible = false;
             // 
+            // btnSave
+            // 
+            this.btnSave.Location = new System.Drawing.Point(905, 347);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(253, 65);
+            this.btnSave.TabIndex = 25;
+            this.btnSave.Text = "Save";
+            this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
+            // 
             // frmPersonForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1188, 500);
+            this.Controls.Add(this.btnSave);
             this.Controls.Add(this.lnkRemove);
             this.Controls.Add(this.lnkEdit);
             this.Controls.Add(this.pbImage);
@@ -334,5 +346,6 @@
         private System.Windows.Forms.PictureBox pbImage;
         private System.Windows.Forms.LinkLabel lnkEdit;
         private System.Windows.Forms.LinkLabel lnkRemove;
+        private System.Windows.Forms.Button btnSave;
     }
 }
