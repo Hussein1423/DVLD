@@ -30,7 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ucPersonalCard));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.lnklblEDIT = new System.Windows.Forms.LinkLabel();
             this.lblAddress = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.lblCountry = new System.Windows.Forms.Label();
@@ -57,7 +56,7 @@
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pbImage = new System.Windows.Forms.PictureBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
@@ -67,12 +66,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbImage)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.lnklblEDIT);
             this.groupBox1.Controls.Add(this.pictureBox9);
             this.groupBox1.Controls.Add(this.pictureBox8);
             this.groupBox1.Controls.Add(this.pictureBox7);
@@ -81,7 +79,7 @@
             this.groupBox1.Controls.Add(this.pictureBox4);
             this.groupBox1.Controls.Add(this.pictureBox3);
             this.groupBox1.Controls.Add(this.pictureBox2);
-            this.groupBox1.Controls.Add(this.pictureBox1);
+            this.groupBox1.Controls.Add(this.pbImage);
             this.groupBox1.Controls.Add(this.lblAddress);
             this.groupBox1.Controls.Add(this.label16);
             this.groupBox1.Controls.Add(this.lblCountry);
@@ -107,16 +105,6 @@
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Personal Informaition";
-            // 
-            // lnklblEDIT
-            // 
-            this.lnklblEDIT.AutoSize = true;
-            this.lnklblEDIT.Location = new System.Drawing.Point(453, 23);
-            this.lnklblEDIT.Name = "lnklblEDIT";
-            this.lnklblEDIT.Size = new System.Drawing.Size(45, 19);
-            this.lnklblEDIT.TabIndex = 27;
-            this.lnklblEDIT.TabStop = true;
-            this.lnklblEDIT.Text = "EDIT";
             // 
             // lblAddress
             // 
@@ -360,15 +348,15 @@
             this.pictureBox2.TabIndex = 19;
             this.pictureBox2.TabStop = false;
             // 
-            // pictureBox1
+            // pbImage
             // 
-            this.pictureBox1.Image = global::DVLDtest.Properties.Resources.person_boy;
-            this.pictureBox1.Location = new System.Drawing.Point(396, 66);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(163, 169);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 18;
-            this.pictureBox1.TabStop = false;
+            this.pbImage.Image = global::DVLDtest.Properties.Resources.person_boy;
+            this.pbImage.Location = new System.Drawing.Point(396, 66);
+            this.pbImage.Name = "pbImage";
+            this.pbImage.Size = new System.Drawing.Size(163, 169);
+            this.pbImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbImage.TabIndex = 18;
+            this.pbImage.TabStop = false;
             // 
             // ucPersonalCard
             // 
@@ -388,7 +376,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbImage)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -400,7 +388,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label lblPersonalID;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pbImage;
         private System.Windows.Forms.Label lblAddress;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label lblCountry;
@@ -423,6 +411,5 @@
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.LinkLabel lnklblEDIT;
     }
 }

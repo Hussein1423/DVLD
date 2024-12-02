@@ -18,3 +18,4 @@ D:\Programmin Advice\Project 19\DVLDtest\bin\Debug\LogicLayerDVLD.pdb
 D:\Programmin Advice\Project 19\DVLDtest\bin\Debug\DataLayerDVLD.pdb
 D:\Programmin Advice\Project 19\DVLDtest\obj\Debug\DVLDtest.csproj.Up2Date
 D:\Programmin Advice\Project 19\DVLDtest\obj\Debug\DVLDtest.People.frmPersonForm.resources
+D:\Programmin Advice\Project 19\DVLDtest\obj\Debug\DVLDtest.People.frmShowPerson.resources

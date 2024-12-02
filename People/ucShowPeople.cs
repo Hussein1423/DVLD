@@ -140,5 +140,12 @@ namespace DVLDtest.People
             frmPersonForm personForm = new frmPersonForm(personID);
             personForm.ShowDialog();
         }
+
+        private void showDetailsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            int personID = (int)dgvPeople.CurrentRow.Cells[0].Value;
+            frmShowPerson showPerson = new frmShowPerson(personID);
+            showPerson.ShowDialog();
+        }
     }
 }

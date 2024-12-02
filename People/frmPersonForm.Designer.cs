@@ -136,6 +136,7 @@
             this.txtNationalNo.Name = "txtNationalNo";
             this.txtNationalNo.Size = new System.Drawing.Size(100, 27);
             this.txtNationalNo.TabIndex = 9;
+            this.txtNationalNo.Validated += new System.EventHandler(this.txtNationalNo_Validated);
             // 
             // label6
             // 
@@ -188,6 +189,7 @@
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(215, 27);
             this.txtEmail.TabIndex = 15;
+            this.txtEmail.Validated += new System.EventHandler(this.txtEmail_Validated);
             // 
             // label9
             // 
@@ -258,6 +260,7 @@
             this.lnkEdit.TabIndex = 23;
             this.lnkEdit.TabStop = true;
             this.lnkEdit.Text = "Edit";
+            this.lnkEdit.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lnkEdit_LinkClicked);
             // 
             // lnkRemove
             // 
@@ -269,6 +272,7 @@
             this.lnkRemove.TabStop = true;
             this.lnkRemove.Text = "Remove";
             this.lnkRemove.Visible = false;
+            this.lnkRemove.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lnkRemove_LinkClicked);
             // 
             // btnSave
             // 

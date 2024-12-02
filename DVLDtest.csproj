@@ -69,6 +69,12 @@
     <Compile Include="People\frmPersonForm.Designer.cs">
       <DependentUpon>frmPersonForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="People\frmShowPerson.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="People\frmShowPerson.Designer.cs">
+      <DependentUpon>frmShowPerson.cs</DependentUpon>
+    </Compile>
     <Compile Include="People\ucShowPeople.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -91,6 +97,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="People\frmPersonForm.resx">
       <DependentUpon>frmPersonForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="People\frmShowPerson.resx">
+      <DependentUpon>frmShowPerson.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="People\ucShowPeople.resx">
       <DependentUpon>ucShowPeople.cs</DependentUpon>

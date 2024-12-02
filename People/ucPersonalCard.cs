@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace DVLDtest
 {
@@ -37,6 +38,8 @@ namespace DVLDtest
                 lblPhone.Text = _person.phone;
                 lblBirthday.Text = _person.birthday.ToString();
                 lblAddress.Text = _person.address;
+                pbImage.Image = _person.gender ? Properties.Resources.person_woman : Properties.Resources.person_boy; // تحتاج إلى إضافة صورة افتراضية في الموارد
+
             }
             else
             {
