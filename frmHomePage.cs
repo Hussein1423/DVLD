@@ -1,4 +1,5 @@
 ﻿using DVLDtest.People;
+using DVLDtest.Users;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -29,6 +30,19 @@ namespace DVLDtest
         {
             ucShowPeople showPeople = new ucShowPeople();
             addUserControlToScreen(showPeople);
+        }
+
+        private void usersToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ucShowUsers showUsers = new ucShowUsers();
+            addUserControlToScreen(showUsers);
+        }
+
+        private void logOutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmLoginScreen loginScreen = new frmLoginScreen();
+            loginScreen.Show();
+            this.Hide();
         }
     }
 }

@@ -32,8 +32,14 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ucShowPeople));
             this.dgvPeople = new System.Windows.Forms.DataGridView();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.showDetailsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+            this.addPersonToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.editPersonToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.deletePersonToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.sendEmailToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.callToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cbFliter = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.mtbFliter = new System.Windows.Forms.MaskedTextBox();
@@ -41,14 +47,7 @@
             this.lblRecords = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.gabClose = new Guna.UI.WinForms.GunaAdvenceButton();
             this.gabAddPerson = new Guna.UI.WinForms.GunaAdvenceButton();
-            this.showDetailsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.addPersonToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.editPersonToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.deletePersonToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.sendEmailToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.callToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPeople)).BeginInit();
             this.contextMenuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -67,7 +66,7 @@
             this.dgvPeople.ReadOnly = true;
             this.dgvPeople.RowHeadersWidth = 62;
             this.dgvPeople.RowTemplate.Height = 29;
-            this.dgvPeople.Size = new System.Drawing.Size(922, 315);
+            this.dgvPeople.Size = new System.Drawing.Size(903, 315);
             this.dgvPeople.TabIndex = 0;
             // 
             // contextMenuStrip1
@@ -83,17 +82,72 @@
             this.sendEmailToolStripMenuItem,
             this.callToolStripMenuItem});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(289, 479);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(241, 446);
+            // 
+            // showDetailsToolStripMenuItem
+            // 
+            this.showDetailsToolStripMenuItem.AutoSize = false;
+            this.showDetailsToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("showDetailsToolStripMenuItem.Image")));
+            this.showDetailsToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.showDetailsToolStripMenuItem.Name = "showDetailsToolStripMenuItem";
+            this.showDetailsToolStripMenuItem.Size = new System.Drawing.Size(288, 70);
+            this.showDetailsToolStripMenuItem.Text = "Show Details";
+            this.showDetailsToolStripMenuItem.Click += new System.EventHandler(this.showDetailsToolStripMenuItem_Click);
             // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(285, 6);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(237, 6);
+            // 
+            // addPersonToolStripMenuItem
+            // 
+            this.addPersonToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("addPersonToolStripMenuItem.Image")));
+            this.addPersonToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.addPersonToolStripMenuItem.Name = "addPersonToolStripMenuItem";
+            this.addPersonToolStripMenuItem.Size = new System.Drawing.Size(240, 72);
+            this.addPersonToolStripMenuItem.Text = "Add Person";
+            this.addPersonToolStripMenuItem.Click += new System.EventHandler(this.addPersonToolStripMenuItem_Click);
+            // 
+            // editPersonToolStripMenuItem
+            // 
+            this.editPersonToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("editPersonToolStripMenuItem.Image")));
+            this.editPersonToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.editPersonToolStripMenuItem.Name = "editPersonToolStripMenuItem";
+            this.editPersonToolStripMenuItem.Size = new System.Drawing.Size(240, 72);
+            this.editPersonToolStripMenuItem.Text = "Edit Person";
+            this.editPersonToolStripMenuItem.Click += new System.EventHandler(this.editPersonToolStripMenuItem_Click);
+            // 
+            // deletePersonToolStripMenuItem
+            // 
+            this.deletePersonToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("deletePersonToolStripMenuItem.Image")));
+            this.deletePersonToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.deletePersonToolStripMenuItem.Name = "deletePersonToolStripMenuItem";
+            this.deletePersonToolStripMenuItem.Size = new System.Drawing.Size(240, 72);
+            this.deletePersonToolStripMenuItem.Text = "Delete Person";
+            this.deletePersonToolStripMenuItem.Click += new System.EventHandler(this.deletePersonToolStripMenuItem_Click);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(285, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(237, 6);
+            // 
+            // sendEmailToolStripMenuItem
+            // 
+            this.sendEmailToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("sendEmailToolStripMenuItem.Image")));
+            this.sendEmailToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.sendEmailToolStripMenuItem.Name = "sendEmailToolStripMenuItem";
+            this.sendEmailToolStripMenuItem.Size = new System.Drawing.Size(240, 72);
+            this.sendEmailToolStripMenuItem.Text = "Send Email";
+            this.sendEmailToolStripMenuItem.Click += new System.EventHandler(this.sendEmailToolStripMenuItem_Click);
+            // 
+            // callToolStripMenuItem
+            // 
+            this.callToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("callToolStripMenuItem.Image")));
+            this.callToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.callToolStripMenuItem.Name = "callToolStripMenuItem";
+            this.callToolStripMenuItem.Size = new System.Drawing.Size(240, 72);
+            this.callToolStripMenuItem.Text = "Call";
+            this.callToolStripMenuItem.Click += new System.EventHandler(this.callToolStripMenuItem_Click);
             // 
             // cbFliter
             // 
@@ -173,38 +227,6 @@
             this.pictureBox1.TabIndex = 8;
             this.pictureBox1.TabStop = false;
             // 
-            // gabClose
-            // 
-            this.gabClose.AnimationHoverSpeed = 0.07F;
-            this.gabClose.AnimationSpeed = 0.03F;
-            this.gabClose.BaseColor = System.Drawing.SystemColors.Control;
-            this.gabClose.BorderColor = System.Drawing.Color.Black;
-            this.gabClose.CheckedBaseColor = System.Drawing.Color.Gray;
-            this.gabClose.CheckedBorderColor = System.Drawing.Color.Black;
-            this.gabClose.CheckedForeColor = System.Drawing.Color.White;
-            this.gabClose.CheckedImage = ((System.Drawing.Image)(resources.GetObject("gabClose.CheckedImage")));
-            this.gabClose.CheckedLineColor = System.Drawing.Color.DimGray;
-            this.gabClose.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.gabClose.FocusedColor = System.Drawing.Color.Empty;
-            this.gabClose.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.gabClose.ForeColor = System.Drawing.Color.White;
-            this.gabClose.Image = ((System.Drawing.Image)(resources.GetObject("gabClose.Image")));
-            this.gabClose.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.gabClose.ImageSize = new System.Drawing.Size(30, 30);
-            this.gabClose.LineColor = System.Drawing.SystemColors.Control;
-            this.gabClose.Location = new System.Drawing.Point(1174, 3);
-            this.gabClose.Name = "gabClose";
-            this.gabClose.OnHoverBaseColor = System.Drawing.SystemColors.Control;
-            this.gabClose.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.gabClose.OnHoverForeColor = System.Drawing.Color.White;
-            this.gabClose.OnHoverImage = null;
-            this.gabClose.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.gabClose.OnPressedColor = System.Drawing.Color.Black;
-            this.gabClose.Size = new System.Drawing.Size(44, 42);
-            this.gabClose.TabIndex = 7;
-            this.gabClose.Text = "gunaAdvenceButton2";
-            this.gabClose.Click += new System.EventHandler(this.gabClose_Click);
-            // 
             // gabAddPerson
             // 
             this.gabAddPerson.AnimationHoverSpeed = 0.07F;
@@ -236,68 +258,12 @@
             this.gabAddPerson.Text = "Add Person";
             this.gabAddPerson.Click += new System.EventHandler(this.gabAddPerson_Click);
             // 
-            // showDetailsToolStripMenuItem
-            // 
-            this.showDetailsToolStripMenuItem.AutoSize = false;
-            this.showDetailsToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("showDetailsToolStripMenuItem.Image")));
-            this.showDetailsToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.showDetailsToolStripMenuItem.Name = "showDetailsToolStripMenuItem";
-            this.showDetailsToolStripMenuItem.Size = new System.Drawing.Size(288, 70);
-            this.showDetailsToolStripMenuItem.Text = "Show Details";
-            this.showDetailsToolStripMenuItem.Click += new System.EventHandler(this.showDetailsToolStripMenuItem_Click);
-            // 
-            // addPersonToolStripMenuItem
-            // 
-            this.addPersonToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("addPersonToolStripMenuItem.Image")));
-            this.addPersonToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.addPersonToolStripMenuItem.Name = "addPersonToolStripMenuItem";
-            this.addPersonToolStripMenuItem.Size = new System.Drawing.Size(288, 72);
-            this.addPersonToolStripMenuItem.Text = "Add Person";
-            this.addPersonToolStripMenuItem.Click += new System.EventHandler(this.addPersonToolStripMenuItem_Click);
-            // 
-            // editPersonToolStripMenuItem
-            // 
-            this.editPersonToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("editPersonToolStripMenuItem.Image")));
-            this.editPersonToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.editPersonToolStripMenuItem.Name = "editPersonToolStripMenuItem";
-            this.editPersonToolStripMenuItem.Size = new System.Drawing.Size(288, 72);
-            this.editPersonToolStripMenuItem.Text = "Edit Person";
-            this.editPersonToolStripMenuItem.Click += new System.EventHandler(this.editPersonToolStripMenuItem_Click);
-            // 
-            // deletePersonToolStripMenuItem
-            // 
-            this.deletePersonToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("deletePersonToolStripMenuItem.Image")));
-            this.deletePersonToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.deletePersonToolStripMenuItem.Name = "deletePersonToolStripMenuItem";
-            this.deletePersonToolStripMenuItem.Size = new System.Drawing.Size(288, 72);
-            this.deletePersonToolStripMenuItem.Text = "Delete Person";
-            this.deletePersonToolStripMenuItem.Click += new System.EventHandler(this.deletePersonToolStripMenuItem_Click);
-            // 
-            // sendEmailToolStripMenuItem
-            // 
-            this.sendEmailToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("sendEmailToolStripMenuItem.Image")));
-            this.sendEmailToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.sendEmailToolStripMenuItem.Name = "sendEmailToolStripMenuItem";
-            this.sendEmailToolStripMenuItem.Size = new System.Drawing.Size(288, 72);
-            this.sendEmailToolStripMenuItem.Text = "Send Email";
-            this.sendEmailToolStripMenuItem.Click += new System.EventHandler(this.sendEmailToolStripMenuItem_Click);
-            // 
-            // callToolStripMenuItem
-            // 
-            this.callToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("callToolStripMenuItem.Image")));
-            this.callToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.callToolStripMenuItem.Name = "callToolStripMenuItem";
-            this.callToolStripMenuItem.Size = new System.Drawing.Size(288, 72);
-            this.callToolStripMenuItem.Text = "Call";
-            this.callToolStripMenuItem.Click += new System.EventHandler(this.callToolStripMenuItem_Click);
-            // 
             // ucShowPeople
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.label4);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.gabClose);
             this.Controls.Add(this.gabAddPerson);
             this.Controls.Add(this.lblRecords);
             this.Controls.Add(this.label2);
@@ -306,7 +272,7 @@
             this.Controls.Add(this.cbFliter);
             this.Controls.Add(this.dgvPeople);
             this.Name = "ucShowPeople";
-            this.Size = new System.Drawing.Size(922, 510);
+            this.Size = new System.Drawing.Size(903, 510);
             this.Load += new System.EventHandler(this.ucShowPeople_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvPeople)).EndInit();
             this.contextMenuStrip1.ResumeLayout(false);
@@ -334,7 +300,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label lblRecords;
         private Guna.UI.WinForms.GunaAdvenceButton gabAddPerson;
-        private Guna.UI.WinForms.GunaAdvenceButton gabClose;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label4;
     }

@@ -63,6 +63,12 @@
     <Compile Include="frmHomePage.Designer.cs">
       <DependentUpon>frmHomePage.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmLoginScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLoginScreen.Designer.cs">
+      <DependentUpon>frmLoginScreen.cs</DependentUpon>
+    </Compile>
     <Compile Include="People\frmPersonForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -89,11 +95,32 @@
     <Compile Include="People\ucPersonalCard.Designer.cs">
       <DependentUpon>ucPersonalCard.cs</DependentUpon>
     </Compile>
+    <Compile Include="Users\ucFormUser.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Users\ucFormUser.Designer.cs">
+      <DependentUpon>ucFormUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Users\ucShowUsers.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Users\ucShowUsers.Designer.cs">
+      <DependentUpon>ucShowUsers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Users\ucUserCard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Users\ucUserCard.Designer.cs">
+      <DependentUpon>ucUserCard.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmHomePage.resx">
       <DependentUpon>frmHomePage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLoginScreen.resx">
+      <DependentUpon>frmLoginScreen.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="People\frmPersonForm.resx">
       <DependentUpon>frmPersonForm.cs</DependentUpon>
@@ -116,6 +143,15 @@
     </Compile>
     <EmbeddedResource Include="People\ucPersonalCard.resx">
       <DependentUpon>ucPersonalCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Users\ucFormUser.resx">
+      <DependentUpon>ucFormUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Users\ucShowUsers.resx">
+      <DependentUpon>ucShowUsers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Users\ucUserCard.resx">
+      <DependentUpon>ucUserCard.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
