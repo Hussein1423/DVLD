@@ -81,6 +81,12 @@
     <Compile Include="People\frmShowPerson.Designer.cs">
       <DependentUpon>frmShowPerson.cs</DependentUpon>
     </Compile>
+    <Compile Include="People\ucPersonCardwithFilter.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="People\ucPersonCardwithFilter.Designer.cs">
+      <DependentUpon>ucPersonCardwithFilter.cs</DependentUpon>
+    </Compile>
     <Compile Include="People\ucShowPeople.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -94,6 +100,24 @@
     </Compile>
     <Compile Include="People\ucPersonalCard.Designer.cs">
       <DependentUpon>ucPersonalCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Users\frmAddUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Users\frmAddUser.Designer.cs">
+      <DependentUpon>frmAddUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Users\frmChangePassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Users\frmChangePassword.Designer.cs">
+      <DependentUpon>frmChangePassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Users\frmShowUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Users\frmShowUser.Designer.cs">
+      <DependentUpon>frmShowUser.cs</DependentUpon>
     </Compile>
     <Compile Include="Users\ucFormUser.cs">
       <SubType>UserControl</SubType>
@@ -128,6 +152,9 @@
     <EmbeddedResource Include="People\frmShowPerson.resx">
       <DependentUpon>frmShowPerson.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="People\ucPersonCardwithFilter.resx">
+      <DependentUpon>ucPersonCardwithFilter.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="People\ucShowPeople.resx">
       <DependentUpon>ucShowPeople.cs</DependentUpon>
     </EmbeddedResource>
@@ -143,6 +170,15 @@
     </Compile>
     <EmbeddedResource Include="People\ucPersonalCard.resx">
       <DependentUpon>ucPersonalCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Users\frmAddUser.resx">
+      <DependentUpon>frmAddUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Users\frmChangePassword.resx">
+      <DependentUpon>frmChangePassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Users\frmShowUser.resx">
+      <DependentUpon>frmShowUser.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Users\ucFormUser.resx">
       <DependentUpon>ucFormUser.cs</DependentUpon>

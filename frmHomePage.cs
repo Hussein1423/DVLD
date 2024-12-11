@@ -14,9 +14,13 @@ namespace DVLDtest
 {
     public partial class frmHomePage : Form
     {
-        public frmHomePage()
+        int _userID;
+        int _personID;
+        public frmHomePage(int userID,int personID)
         {
             InitializeComponent();
+            _userID = userID;
+            _personID = personID;
         }
 
         private void addUserControlToScreen(UserControl userControl)
@@ -38,11 +42,22 @@ namespace DVLDtest
             addUserControlToScreen(showUsers);
         }
 
-        private void logOutToolStripMenuItem_Click(object sender, EventArgs e)
+     
+        private void currentUserToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmLoginScreen loginScreen = new frmLoginScreen();
-            loginScreen.Show();
-            this.Hide();
+            frmShowUser currentUser = new frmShowUser(_personID,_userID);
+            currentUser.Show();
+        }
+
+        private void changePasswordToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmChangePassword changePassword = new frmChangePassword(_personID,_userID);
+            changePassword.Show();
+        }
+
+        private void logOutToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+           this.Close();
         }
     }
 }

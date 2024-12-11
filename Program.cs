@@ -1,4 +1,5 @@
 ﻿using DVLDtest.People;
+using DVLDtest.Users;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -21,7 +22,8 @@ namespace DVLDtest
             }
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmHomePage());
+            Application.Run(new frmHomePage(1,1));
+            //Application.Run(new frmAddUser());
         }
         [System.Runtime.InteropServices.DllImport("user32.dll")]
         private static extern bool SetProcessDPIAware();

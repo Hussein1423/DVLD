@@ -48,6 +48,7 @@ namespace DVLDtest.People
         private void cbFliter_SelectedIndexChanged(object sender, EventArgs e)
         {
             mtbFliter.Visible = true;
+            mtbFliter.Clear();
             if(cbFliter.SelectedIndex == 0)
             {
                 mtbFliter.Mask = "00000000000";
@@ -69,31 +70,31 @@ namespace DVLDtest.People
             switch(cbFliter.SelectedIndex)
             {
                 case 0:
-                    _refresh(clsPerson.PersonIDSearchStartWith(mtbFliter.Text, (int) eFilter.PersonId));
+                    _refresh(clsPerson.PersonIDSearchStartWith(mtbFliter.Text.Trim(), (int) eFilter.PersonId));
                     lblRecords.Text = dgvPeople.RowCount.ToString();
                     break;
                 case 1:
-                    _refresh(clsPerson.PersonIDSearchStartWith(mtbFliter.Text, (int)eFilter.NationalNo));
+                    _refresh(clsPerson.PersonIDSearchStartWith(mtbFliter.Text.Trim(), (int)eFilter.NationalNo));
                     lblRecords.Text = dgvPeople.RowCount.ToString();
                     break;
                 case 2:
-                    _refresh(clsPerson.PersonIDSearchStartWith(mtbFliter.Text, (int)eFilter.FirstName));
+                    _refresh(clsPerson.PersonIDSearchStartWith(mtbFliter.Text.Trim(), (int)eFilter.FirstName));
                     lblRecords.Text = dgvPeople.RowCount.ToString();
                     break;
                 case 3:
-                    _refresh(clsPerson.PersonIDSearchStartWith(mtbFliter.Text, (int)eFilter.SecondName));
+                    _refresh(clsPerson.PersonIDSearchStartWith(mtbFliter.Text.Trim(), (int)eFilter.SecondName));
                     lblRecords.Text = dgvPeople.RowCount.ToString();
                     break;
                 case 4:
-                    _refresh(clsPerson.PersonIDSearchStartWith(mtbFliter.Text, (int)eFilter.LastName));
+                    _refresh(clsPerson.PersonIDSearchStartWith(mtbFliter.Text.Trim(), (int)eFilter.LastName));
                     lblRecords.Text = dgvPeople.RowCount.ToString();
                     break;
                 case 5:
-                    _refresh(clsPerson.PersonIDSearchStartWith(mtbFliter.Text, (int)eFilter.Phone));
+                    _refresh(clsPerson.PersonIDSearchStartWith(mtbFliter.Text.Trim(), (int)eFilter.Phone));
                     lblRecords.Text = dgvPeople.RowCount.ToString();
                     break;
                 case 6:
-                    _refresh(clsPerson.PersonIDSearchStartWith(mtbFliter.Text, (int)eFilter.Email));
+                    _refresh(clsPerson.PersonIDSearchStartWith(mtbFliter.Text.Trim(), (int)eFilter.Email));
                     lblRecords.Text = dgvPeople.RowCount.ToString();
                     break;
             }
