@@ -1,6 +1,6 @@
 ﻿namespace DVLDtest.Users
 {
-    partial class frmAddUser
+    partial class frmUserForm
     {
         /// <summary>
         /// Required designer variable.
@@ -31,7 +31,6 @@
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPerson = new System.Windows.Forms.TabPage();
             this.btnAddUser = new System.Windows.Forms.Button();
-            this.ucPersonCardwithFilter1 = new DVLDtest.People.ucPersonCardwithFilter();
             this.tabUser = new System.Windows.Forms.TabPage();
             this.btnConfirm = new System.Windows.Forms.Button();
             this.rbnotActive = new System.Windows.Forms.RadioButton();
@@ -43,6 +42,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.ucPersonCardwithFilter1 = new DVLDtest.People.ucPersonCardwithFilter();
             this.tabControl1.SuspendLayout();
             this.tabPerson.SuspendLayout();
             this.tabUser.SuspendLayout();
@@ -80,13 +80,6 @@
             this.btnAddUser.Text = "User";
             this.btnAddUser.UseVisualStyleBackColor = true;
             this.btnAddUser.Click += new System.EventHandler(this.btnAddUser_Click);
-            // 
-            // ucPersonCardwithFilter1
-            // 
-            this.ucPersonCardwithFilter1.Location = new System.Drawing.Point(6, 0);
-            this.ucPersonCardwithFilter1.Name = "ucPersonCardwithFilter1";
-            this.ucPersonCardwithFilter1.Size = new System.Drawing.Size(606, 593);
-            this.ucPersonCardwithFilter1.TabIndex = 0;
             // 
             // tabUser
             // 
@@ -203,13 +196,21 @@
             this.label1.TabIndex = 10;
             this.label1.Text = "Username";
             // 
-            // frmAddUser
+            // ucPersonCardwithFilter1
+            // 
+            this.ucPersonCardwithFilter1.Location = new System.Drawing.Point(6, -1);
+            this.ucPersonCardwithFilter1.Name = "ucPersonCardwithFilter1";
+            this.ucPersonCardwithFilter1.Size = new System.Drawing.Size(631, 593);
+            this.ucPersonCardwithFilter1.TabIndex = 0;
+            this.ucPersonCardwithFilter1.showPersonForm += new System.Action<int>(this.ucPersonCardwithFilter1_showPersonForm);
+            // 
+            // frmUserForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(645, 621);
             this.Controls.Add(this.tabControl1);
-            this.Name = "frmAddUser";
+            this.Name = "frmUserForm";
             this.Text = "frmAddUser";
             this.tabControl1.ResumeLayout(false);
             this.tabPerson.ResumeLayout(false);

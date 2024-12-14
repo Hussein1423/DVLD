@@ -51,6 +51,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ApplicationTypes\frmUpdateApplicationType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ApplicationTypes\frmUpdateApplicationType.Designer.cs">
+      <DependentUpon>frmUpdateApplicationType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ApplicationTypes\ucShowApplicationTypes.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ApplicationTypes\ucShowApplicationTypes.Designer.cs">
+      <DependentUpon>ucShowApplicationTypes.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -101,11 +113,23 @@
     <Compile Include="People\ucPersonalCard.Designer.cs">
       <DependentUpon>ucPersonalCard.cs</DependentUpon>
     </Compile>
-    <Compile Include="Users\frmAddUser.cs">
+    <Compile Include="TestTypes\frmUpdateTest.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Users\frmAddUser.Designer.cs">
-      <DependentUpon>frmAddUser.cs</DependentUpon>
+    <Compile Include="TestTypes\frmUpdateTest.Designer.cs">
+      <DependentUpon>frmUpdateTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TestTypes\ucShowTestTypes.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TestTypes\ucShowTestTypes.Designer.cs">
+      <DependentUpon>ucShowTestTypes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Users\frmUserForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Users\frmUserForm.Designer.cs">
+      <DependentUpon>frmUserForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Users\frmChangePassword.cs">
       <SubType>Form</SubType>
@@ -137,6 +161,12 @@
     <Compile Include="Users\ucUserCard.Designer.cs">
       <DependentUpon>ucUserCard.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="ApplicationTypes\frmUpdateApplicationType.resx">
+      <DependentUpon>frmUpdateApplicationType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ApplicationTypes\ucShowApplicationTypes.resx">
+      <DependentUpon>ucShowApplicationTypes.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -171,8 +201,14 @@
     <EmbeddedResource Include="People\ucPersonalCard.resx">
       <DependentUpon>ucPersonalCard.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Users\frmAddUser.resx">
-      <DependentUpon>frmAddUser.cs</DependentUpon>
+    <EmbeddedResource Include="TestTypes\frmUpdateTest.resx">
+      <DependentUpon>frmUpdateTest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TestTypes\ucShowTestTypes.resx">
+      <DependentUpon>ucShowTestTypes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Users\frmUserForm.resx">
+      <DependentUpon>frmUserForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Users\frmChangePassword.resx">
       <DependentUpon>frmChangePassword.cs</DependentUpon>
@@ -214,5 +250,6 @@
       <Name>LogicLayerDVLD</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -42,7 +42,7 @@ namespace DVLDtest.Users
 
         private void addPersonToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmAddUser addUser = new frmAddUser();
+            frmUserForm addUser = new frmUserForm();
             addUser.ShowDialog();
         }
 
@@ -202,14 +202,14 @@ namespace DVLDtest.Users
 
         private void gabAddPerson_Click(object sender, EventArgs e)
         {
-            frmAddUser addUser= new frmAddUser();
+            frmUserForm addUser= new frmUserForm();
             addUser.ShowDialog();
         }
 
         private void editPersonToolStripMenuItem_Click(object sender, EventArgs e)
         {
             int userID = (int)dgvPeople.CurrentRow.Cells[0].Value;   
-            frmAddUser addUser = new frmAddUser(userID);
+            frmUserForm addUser = new frmUserForm(userID);
             addUser.ShowDialog();
         }
     }

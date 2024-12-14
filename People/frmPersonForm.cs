@@ -14,6 +14,14 @@ namespace DVLDtest.People
 {
     public partial class frmPersonForm : Form
     {
+
+        // Declare a delegate
+        public delegate void DataBackEventHandler(int PersonID);
+
+        // Declare an event using the delegate
+        public event DataBackEventHandler DataBack;
+
+    
         int personID;
         clsPerson person;
        
@@ -21,6 +29,7 @@ namespace DVLDtest.People
         {
             if (person != null)
             {
+                lblPersonID.Text = person.PersonID.ToString();
                 txtFirstName.Text = person.firstName;
                 txtLastName.Text = person.lastName;
                 txtSecondName.Text = person.secondName;
@@ -88,7 +97,15 @@ namespace DVLDtest.People
             person.imagePath = pbImage.ToString();
             if (person.save())
             {
+                lblPersonID.Text = person.PersonID.ToString();
                 MessageBox.Show("This Operation was succeeded");
+                personID = int.Parse(lblPersonID.Text);
+
+                // Trigger the event to send data back to Form1
+                DataBack?.Invoke(personID);
+
+
+                this.Close();
             }
             else { MessageBox.Show("This Operation was failed"); }
         }

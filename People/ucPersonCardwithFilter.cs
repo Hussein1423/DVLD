@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace DVLDtest.People
 {
@@ -76,6 +77,12 @@ namespace DVLDtest.People
             }
         }
 
+        public void loadTheInfo()
+        {
+            ucPersonalCard1.personID = personID;
+            ucPersonalCard1.loadTheInfo();
+        }
+
         private void cbFliter_SelectedIndexChanged(object sender, EventArgs e)
         {
             switch (cbFliter.SelectedIndex)
@@ -88,5 +95,19 @@ namespace DVLDtest.People
                     break;
             }
         }
+
+        public event Action<int> showPersonForm;
+        protected virtual void ShowPersonForm()
+        {
+            Action<int> handler = showPersonForm;
+            if (handler != null)
+                handler(0);
+        }
+        private void btnAddPerson_Click(object sender, EventArgs e)
+        {
+            if (showPersonForm != null)
+                showPersonForm(0);
+        }
+       
     }
 }

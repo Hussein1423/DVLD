@@ -1,4 +1,5 @@
-﻿using LogicLayerDVLD;
+﻿using DVLDtest.People;
+using LogicLayerDVLD;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -12,18 +13,18 @@ using static System.Net.Mime.MediaTypeNames;
 
 namespace DVLDtest.Users
 {
-    public partial class frmAddUser : Form
+    public partial class frmUserForm : Form
     {
         clsUser user;
-        public frmAddUser(int userID=-1)
+        public frmUserForm(int userID=-1)
         {
             InitializeComponent();
             user = clsUser.getUserByID(userID);
-            stateofForm(user);
             if (user != null)
             {
                 tabControl1.TabPages[1].Enabled = true;
                 tabControl1.SelectedIndex = 1;
+                stateofForm(user);
             }
             else
             {
@@ -50,10 +51,7 @@ namespace DVLDtest.Users
           
 
             }
-            else
-            {
-                user = new clsUser();
-            }
+           
 
 
         }
@@ -186,6 +184,10 @@ namespace DVLDtest.Users
 
         private void btnConfirm_Click(object sender, EventArgs e)
         {
+            if (user == null)
+            {
+                user = new clsUser();
+            }
             user.UserName = txtUsername.Text;
             user.PersonID = ucPersonCardwithFilter1.personID;
             user.Password = txtPassword.Text;
@@ -204,7 +206,7 @@ namespace DVLDtest.Users
                 txtPassword.Text = "";
                 txtConfirmPassword.Text = "";
 
-                MessageBox.Show("User is added successfully!!");
+                MessageBox.Show("This Operation was succeeded");
                 tabControl1.TabPages[1].Enabled = false;
                 tabControl1.SelectTab("tabPerson");
 
@@ -214,6 +216,20 @@ namespace DVLDtest.Users
                 MessageBox.Show("something wrong");
 
             }
+        }
+
+        private void ucPersonCardwithFilter1_showPersonForm(int obj)
+        {
+            frmPersonForm personForm = new frmPersonForm(-1);
+            personForm.DataBack += frmPersonForm_DataBack;
+            personForm.ShowDialog();
+        }
+        private void frmPersonForm_DataBack(int PersonID)
+        {
+            // Handle the data received from Form2
+            ucPersonCardwithFilter1.personID = PersonID;
+            ucPersonCardwithFilter1.loadTheInfo();
+
         }
     }
 }

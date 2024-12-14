@@ -92,6 +92,7 @@
             this.btnAddPerson.TabIndex = 8;
             this.btnAddPerson.Text = "Add";
             this.btnAddPerson.UseVisualStyleBackColor = true;
+            this.btnAddPerson.Click += new System.EventHandler(this.btnAddPerson_Click);
             // 
             // ucPersonCardwithFilter
             // 

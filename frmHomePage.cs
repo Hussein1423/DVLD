@@ -1,4 +1,6 @@
-﻿using DVLDtest.People;
+﻿using DVLDtest.ApplicationTypes;
+using DVLDtest.People;
+using DVLDtest.TestTypes;
 using DVLDtest.Users;
 using System;
 using System.Collections.Generic;
@@ -58,6 +60,18 @@ namespace DVLDtest
         private void logOutToolStripMenuItem_Click_1(object sender, EventArgs e)
         {
            this.Close();
+        }
+
+        private void applicationTypesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ucShowApplicationTypes applicationTypes = new ucShowApplicationTypes();
+            addUserControlToScreen(applicationTypes);
+        }
+
+        private void testTypesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ucShowTestTypes showTestTypes = new ucShowTestTypes();
+            addUserControlToScreen(showTestTypes);
         }
     }
 }

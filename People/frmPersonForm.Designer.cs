@@ -54,6 +54,8 @@
             this.lnkEdit = new System.Windows.Forms.LinkLabel();
             this.lnkRemove = new System.Windows.Forms.LinkLabel();
             this.btnSave = new System.Windows.Forms.Button();
+            this.label12 = new System.Windows.Forms.Label();
+            this.lblPersonID = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pbImage)).BeginInit();
             this.SuspendLayout();
             // 
@@ -244,7 +246,7 @@
             // pbImage
             // 
             this.pbImage.Image = global::DVLDtest.Properties.Resources.person_boy;
-            this.pbImage.Location = new System.Drawing.Point(936, 47);
+            this.pbImage.Location = new System.Drawing.Point(936, 78);
             this.pbImage.Name = "pbImage";
             this.pbImage.Size = new System.Drawing.Size(158, 168);
             this.pbImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -254,7 +256,7 @@
             // lnkEdit
             // 
             this.lnkEdit.AutoSize = true;
-            this.lnkEdit.Location = new System.Drawing.Point(932, 222);
+            this.lnkEdit.Location = new System.Drawing.Point(932, 249);
             this.lnkEdit.Name = "lnkEdit";
             this.lnkEdit.Size = new System.Drawing.Size(36, 19);
             this.lnkEdit.TabIndex = 23;
@@ -265,7 +267,7 @@
             // lnkRemove
             // 
             this.lnkRemove.AutoSize = true;
-            this.lnkRemove.Location = new System.Drawing.Point(1028, 222);
+            this.lnkRemove.Location = new System.Drawing.Point(1028, 249);
             this.lnkRemove.Name = "lnkRemove";
             this.lnkRemove.Size = new System.Drawing.Size(66, 19);
             this.lnkRemove.TabIndex = 24;
@@ -284,11 +286,31 @@
             this.btnSave.UseVisualStyleBackColor = true;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(951, 36);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(80, 19);
+            this.label12.TabIndex = 26;
+            this.label12.Text = "PersonID:";
+            // 
+            // lblPersonID
+            // 
+            this.lblPersonID.AutoSize = true;
+            this.lblPersonID.Location = new System.Drawing.Point(1028, 36);
+            this.lblPersonID.Name = "lblPersonID";
+            this.lblPersonID.Size = new System.Drawing.Size(65, 19);
+            this.lblPersonID.TabIndex = 27;
+            this.lblPersonID.Text = "???????";
+            // 
             // frmPersonForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1188, 500);
+            this.Controls.Add(this.lblPersonID);
+            this.Controls.Add(this.label12);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.lnkRemove);
             this.Controls.Add(this.lnkEdit);
@@ -351,5 +373,7 @@
         private System.Windows.Forms.LinkLabel lnkEdit;
         private System.Windows.Forms.LinkLabel lnkRemove;
         private System.Windows.Forms.Button btnSave;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label lblPersonID;
     }
 }

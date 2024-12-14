@@ -25,5 +25,9 @@ D:\Programmin Advice\Project 19\DVLDtest\obj\Debug\DVLDtest.Users.ucShowUsers.re
 D:\Programmin Advice\Project 19\DVLDtest\obj\Debug\DVLDtest.frmLoginScreen.resources
 D:\Programmin Advice\Project 19\DVLDtest\obj\Debug\DVLDtest.Users.frmChangePassword.resources
 D:\Programmin Advice\Project 19\DVLDtest\obj\Debug\DVLDtest.Users.frmShowUser.resources
-D:\Programmin Advice\Project 19\DVLDtest\obj\Debug\DVLDtest.Users.frmAddUser.resources
 D:\Programmin Advice\Project 19\DVLDtest\obj\Debug\DVLDtest.People.ucPersonCardwithFilter.resources
+D:\Programmin Advice\Project 19\DVLDtest\obj\Debug\DVLDtest.Users.frmUserForm.resources
+D:\Programmin Advice\Project 19\DVLDtest\obj\Debug\DVLDtest.ApplicationTypes.ucShowApplicationTypes.resources
+D:\Programmin Advice\Project 19\DVLDtest\obj\Debug\DVLDtest.ApplicationTypes.frmUpdateApplicationType.resources
+D:\Programmin Advice\Project 19\DVLDtest\obj\Debug\DVLDtest.TestTypes.ucShowTestTypes.resources
+D:\Programmin Advice\Project 19\DVLDtest\obj\Debug\DVLDtest.TestTypes.frmUpdateTest.resources
