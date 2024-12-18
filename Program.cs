@@ -22,7 +22,7 @@ namespace DVLDtest
             }
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmHomePage(1,1));
+            Application.Run(new frmHomePage(18,1));
             //Application.Run(new frmAddUser());
         }
         [System.Runtime.InteropServices.DllImport("user32.dll")]

@@ -31,3 +31,6 @@ D:\Programmin Advice\Project 19\DVLDtest\obj\Debug\DVLDtest.ApplicationTypes.ucS
 D:\Programmin Advice\Project 19\DVLDtest\obj\Debug\DVLDtest.ApplicationTypes.frmUpdateApplicationType.resources
 D:\Programmin Advice\Project 19\DVLDtest\obj\Debug\DVLDtest.TestTypes.ucShowTestTypes.resources
 D:\Programmin Advice\Project 19\DVLDtest\obj\Debug\DVLDtest.TestTypes.frmUpdateTest.resources
+D:\Programmin Advice\Project 19\DVLDtest\obj\Debug\DVLDtest.Applications.ucLocalDrivingLicense.resources
+D:\Programmin Advice\Project 19\DVLDtest\obj\Debug\DVLDtest.LocalDrivingsLA.ucShowLocalDrivingsLA.resources
+D:\Programmin Advice\Project 19\DVLDtest\obj\Debug\DVLDtest.Applications.frmAddApllication.resources

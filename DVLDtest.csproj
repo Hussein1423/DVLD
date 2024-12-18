@@ -51,6 +51,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Applications\frmAddApllication.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Applications\frmAddApllication.Designer.cs">
+      <DependentUpon>frmAddApllication.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Applications\ucLocalDrivingLicense.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Applications\ucLocalDrivingLicense.Designer.cs">
+      <DependentUpon>ucLocalDrivingLicense.cs</DependentUpon>
+    </Compile>
     <Compile Include="ApplicationTypes\frmUpdateApplicationType.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -80,6 +92,12 @@
     </Compile>
     <Compile Include="frmLoginScreen.Designer.cs">
       <DependentUpon>frmLoginScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LocalDrivingsLA\ucShowLocalDrivingsLA.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LocalDrivingsLA\ucShowLocalDrivingsLA.Designer.cs">
+      <DependentUpon>ucShowLocalDrivingsLA.cs</DependentUpon>
     </Compile>
     <Compile Include="People\frmPersonForm.cs">
       <SubType>Form</SubType>
@@ -161,6 +179,12 @@
     <Compile Include="Users\ucUserCard.Designer.cs">
       <DependentUpon>ucUserCard.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Applications\frmAddApllication.resx">
+      <DependentUpon>frmAddApllication.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Applications\ucLocalDrivingLicense.resx">
+      <DependentUpon>ucLocalDrivingLicense.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ApplicationTypes\frmUpdateApplicationType.resx">
       <DependentUpon>frmUpdateApplicationType.cs</DependentUpon>
     </EmbeddedResource>
@@ -175,6 +199,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmLoginScreen.resx">
       <DependentUpon>frmLoginScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalDrivingsLA\ucShowLocalDrivingsLA.resx">
+      <DependentUpon>ucShowLocalDrivingsLA.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="People\frmPersonForm.resx">
       <DependentUpon>frmPersonForm.cs</DependentUpon>

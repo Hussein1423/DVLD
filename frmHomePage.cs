@@ -1,4 +1,6 @@
-﻿using DVLDtest.ApplicationTypes;
+﻿using DVLDtest.Applications;
+using DVLDtest.ApplicationTypes;
+using DVLDtest.LocalDrivingsLA;
 using DVLDtest.People;
 using DVLDtest.TestTypes;
 using DVLDtest.Users;
@@ -25,7 +27,7 @@ namespace DVLDtest
             _personID = personID;
         }
 
-        private void addUserControlToScreen(UserControl userControl)
+        public void addUserControlToScreen(UserControl userControl)
         {
             userControl.Dock = DockStyle.Fill;
             panel1.Controls.Clear();
@@ -72,6 +74,23 @@ namespace DVLDtest
         {
             ucShowTestTypes showTestTypes = new ucShowTestTypes();
             addUserControlToScreen(showTestTypes);
+        }
+
+        private void frmHomePage_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void localLicenseToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ucLocalDrivingLicense localDrivingLicense = new ucLocalDrivingLicense(_userID);
+            addUserControlToScreen(localDrivingLicense);
+        }
+
+        private void localDrivingLicenseApplicationsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ucShowLocalDrivingsLA  ucShowLocal = new ucShowLocalDrivingsLA(_userID,_personID);
+            addUserControlToScreen(ucShowLocal);
         }
     }
 }
