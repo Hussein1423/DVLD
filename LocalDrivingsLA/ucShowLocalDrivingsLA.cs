@@ -16,11 +16,23 @@ namespace DVLDtest.LocalDrivingsLA
     {
         int _createdUser;
         int _PersonID;
+
+        enum eFilter
+        {
+            localDrivingLA = 0,
+            Class = 1,
+            Name = 2,
+            State = 3,
+        }
+       void _refresh(DataTable data)
+        {
+            dgvLocalDrivingsLA.DataSource = data;
+            lblRecords.Text = dgvLocalDrivingsLA.RowCount.ToString();  
+        }
         public ucShowLocalDrivingsLA(int createdUser,int personID)
         {
             InitializeComponent();
-            dgvLocalDrivingsLA.DataSource = clsLocalDrivingLA.getAllLocalDrivingsLA();
-            lblRecords.Text = clsLocalDrivingLA.countAllLocalLicenses().ToString();
+            _refresh(clsLocalDrivingLA.getAllLocalDrivingsLA());
             _createdUser = createdUser;
             _PersonID = personID;
         }
@@ -50,6 +62,61 @@ namespace DVLDtest.LocalDrivingsLA
             homePage.Show();
             homePage.addUserControlToScreen(localDrivingLicense);
             
+        }
+
+        private void cbFliter_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            mtbFliter.Visible = true;
+            mtbFliter.Clear();
+            if (cbFliter.SelectedIndex == 0)
+            {
+                mtbFliter.Mask = "00000000000";
+
+            }
+            else
+            {
+                mtbFliter.Mask = "";
+            }
+        }
+
+
+
+        private void mtbFliter_TextChanged(object sender, EventArgs e)
+        {
+            switch (cbFliter.SelectedIndex)
+            {
+                case (int)eFilter.localDrivingLA:
+                    if (!string.IsNullOrEmpty(mtbFliter.Text))
+                    {
+                        _refresh(clsLocalDrivingLA.getAllLocalDrivingsLAforLocalDrivingLAID(int.Parse(mtbFliter.Text)));
+
+                    }
+                    else
+                    {
+                        _refresh(clsLocalDrivingLA.getAllLocalDrivingsLA());
+
+                    }
+                    break;
+                case (int)eFilter.Class:
+                    _refresh(clsLocalDrivingLA.getAllLocalDrivingsLAforClassName(mtbFliter.Text));
+                    break;
+                case (int)eFilter.Name:
+                    _refresh(clsLocalDrivingLA.getAllLocalDrivingsLAforFullName(mtbFliter.Text));
+                    break;
+                case (int)eFilter.State:
+                    if (!string.IsNullOrEmpty(mtbFliter.Text))
+                    {
+                        _refresh(clsLocalDrivingLA.getAllLocalDrivingsLAforState(mtbFliter.Text));
+
+                    }
+                    else
+                    {
+                        _refresh(clsLocalDrivingLA.getAllLocalDrivingsLA());
+
+                    }
+                    break;
+
+            }
         }
     }
 }
