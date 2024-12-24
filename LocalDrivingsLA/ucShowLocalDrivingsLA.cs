@@ -9,6 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace DVLDtest.LocalDrivingsLA
 {
@@ -116,6 +117,39 @@ namespace DVLDtest.LocalDrivingsLA
                     }
                     break;
 
+            }
+        }
+
+        private void dgvLocalDrivingsLA_CellMouseDown(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            if(e.Button == MouseButtons.Right)
+            {
+                int localDrivingLAID = (int)dgvLocalDrivingsLA.CurrentRow.Cells[0].Value;
+                clsLocalDrivingLA localDrivingLA = clsLocalDrivingLA.getLocalDrivingLicenseByID(localDrivingLAID);
+                switch(localDrivingLA.passedTest)
+                {
+                    case 0:
+                       visionTestToolStripMenuItem.Enabled = true;
+                       writtenTestToolStripMenuItem.Enabled = false;
+                       streetTestToolStripMenuItem.Enabled = false;
+                       break;
+                    case 1:
+                        visionTestToolStripMenuItem.Enabled= false;
+                        writtenTestToolStripMenuItem.Enabled= true;
+                        streetTestToolStripMenuItem.Enabled= false;
+                        break;
+                    case 2:
+                        visionTestToolStripMenuItem.Enabled = false;
+                        writtenTestToolStripMenuItem.Enabled = false;
+                        streetTestToolStripMenuItem.Enabled = true;
+                        break;
+                    case 3:
+                        visionTestToolStripMenuItem.Enabled = false;
+                        writtenTestToolStripMenuItem.Enabled = false;
+                        streetTestToolStripMenuItem.Enabled = false;
+                        break;
+
+                }
             }
         }
     }

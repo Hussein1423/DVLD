@@ -57,6 +57,12 @@
     <Compile Include="Applications\frmAddApllication.Designer.cs">
       <DependentUpon>frmAddApllication.cs</DependentUpon>
     </Compile>
+    <Compile Include="Applications\ucApplicationBasicInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Applications\ucApplicationBasicInfo.Designer.cs">
+      <DependentUpon>ucApplicationBasicInfo.cs</DependentUpon>
+    </Compile>
     <Compile Include="Applications\ucLocalDrivingLicense.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -75,6 +81,24 @@
     <Compile Include="ApplicationTypes\ucShowApplicationTypes.Designer.cs">
       <DependentUpon>ucShowApplicationTypes.cs</DependentUpon>
     </Compile>
+    <Compile Include="Appoiniments\Vision\frmScheduleTest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Appoiniments\Vision\frmScheduleTest.Designer.cs">
+      <DependentUpon>frmScheduleTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Appoiniments\Vision\frmTakeVisionTest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Appoiniments\Vision\frmTakeVisionTest.Designer.cs">
+      <DependentUpon>frmTakeVisionTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Appoiniments\Vision\frmVisionTestAppointments.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Appoiniments\Vision\frmVisionTestAppointments.Designer.cs">
+      <DependentUpon>frmVisionTestAppointments.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -92,6 +116,12 @@
     </Compile>
     <Compile Include="frmLoginScreen.Designer.cs">
       <DependentUpon>frmLoginScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LocalDrivingsLA\ucDrivingLicenseApplicationInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LocalDrivingsLA\ucDrivingLicenseApplicationInfo.Designer.cs">
+      <DependentUpon>ucDrivingLicenseApplicationInfo.cs</DependentUpon>
     </Compile>
     <Compile Include="LocalDrivingsLA\ucShowLocalDrivingsLA.cs">
       <SubType>UserControl</SubType>
@@ -130,6 +160,12 @@
     </Compile>
     <Compile Include="People\ucPersonalCard.Designer.cs">
       <DependentUpon>ucPersonalCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tests\ucTakeTest.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Tests\ucTakeTest.Designer.cs">
+      <DependentUpon>ucTakeTest.cs</DependentUpon>
     </Compile>
     <Compile Include="TestTypes\frmUpdateTest.cs">
       <SubType>Form</SubType>
@@ -182,6 +218,9 @@
     <EmbeddedResource Include="Applications\frmAddApllication.resx">
       <DependentUpon>frmAddApllication.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Applications\ucApplicationBasicInfo.resx">
+      <DependentUpon>ucApplicationBasicInfo.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Applications\ucLocalDrivingLicense.resx">
       <DependentUpon>ucLocalDrivingLicense.cs</DependentUpon>
     </EmbeddedResource>
@@ -191,6 +230,15 @@
     <EmbeddedResource Include="ApplicationTypes\ucShowApplicationTypes.resx">
       <DependentUpon>ucShowApplicationTypes.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Appoiniments\Vision\frmScheduleTest.resx">
+      <DependentUpon>frmScheduleTest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Appoiniments\Vision\frmTakeVisionTest.resx">
+      <DependentUpon>frmTakeVisionTest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Appoiniments\Vision\frmVisionTestAppointments.resx">
+      <DependentUpon>frmVisionTestAppointments.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -199,6 +247,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmLoginScreen.resx">
       <DependentUpon>frmLoginScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalDrivingsLA\ucDrivingLicenseApplicationInfo.resx">
+      <DependentUpon>ucDrivingLicenseApplicationInfo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LocalDrivingsLA\ucShowLocalDrivingsLA.resx">
       <DependentUpon>ucShowLocalDrivingsLA.cs</DependentUpon>
@@ -227,6 +278,9 @@
     </Compile>
     <EmbeddedResource Include="People\ucPersonalCard.resx">
       <DependentUpon>ucPersonalCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tests\ucTakeTest.resx">
+      <DependentUpon>ucTakeTest.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TestTypes\frmUpdateTest.resx">
       <DependentUpon>frmUpdateTest.cs</DependentUpon>
