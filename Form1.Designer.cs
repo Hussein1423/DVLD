@@ -35,14 +35,15 @@
             // 
             this.ucPersonalCard1.Location = new System.Drawing.Point(0, -1);
             this.ucPersonalCard1.Name = "ucPersonalCard1";
-            this.ucPersonalCard1.Size = new System.Drawing.Size(610, 302);
+            this.ucPersonalCard1.personID = 0;
+            this.ucPersonalCard1.Size = new System.Drawing.Size(610, 526);
             this.ucPersonalCard1.TabIndex = 0;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(617, 537);
             this.Controls.Add(this.ucPersonalCard1);
             this.Name = "Form1";
             this.Text = "Form1";

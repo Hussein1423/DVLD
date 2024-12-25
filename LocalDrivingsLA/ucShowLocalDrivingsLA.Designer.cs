@@ -124,12 +124,12 @@
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(231, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(285, 6);
             // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(231, 6);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(285, 6);
             // 
             // contextMenuStrip1
             // 
@@ -144,7 +144,7 @@
             this.sendEmailToolStripMenuItem,
             this.callToolStripMenuItem});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(235, 446);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(289, 479);
             // 
             // showDetailsToolStripMenuItem
             // 
@@ -160,7 +160,7 @@
             this.addPersonToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("addPersonToolStripMenuItem.Image")));
             this.addPersonToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.addPersonToolStripMenuItem.Name = "addPersonToolStripMenuItem";
-            this.addPersonToolStripMenuItem.Size = new System.Drawing.Size(234, 72);
+            this.addPersonToolStripMenuItem.Size = new System.Drawing.Size(288, 72);
             this.addPersonToolStripMenuItem.Text = "Add Person";
             // 
             // editPersonToolStripMenuItem
@@ -172,28 +172,29 @@
             this.editPersonToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("editPersonToolStripMenuItem.Image")));
             this.editPersonToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.editPersonToolStripMenuItem.Name = "editPersonToolStripMenuItem";
-            this.editPersonToolStripMenuItem.Size = new System.Drawing.Size(234, 72);
+            this.editPersonToolStripMenuItem.Size = new System.Drawing.Size(288, 72);
             this.editPersonToolStripMenuItem.Text = "Test";
             // 
             // visionTestToolStripMenuItem
             // 
             this.visionTestToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("visionTestToolStripMenuItem.Image")));
             this.visionTestToolStripMenuItem.Name = "visionTestToolStripMenuItem";
-            this.visionTestToolStripMenuItem.Size = new System.Drawing.Size(207, 34);
+            this.visionTestToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
             this.visionTestToolStripMenuItem.Text = "Vision Test";
+            this.visionTestToolStripMenuItem.Click += new System.EventHandler(this.visionTestToolStripMenuItem_Click);
             // 
             // writtenTestToolStripMenuItem
             // 
             this.writtenTestToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("writtenTestToolStripMenuItem.Image")));
             this.writtenTestToolStripMenuItem.Name = "writtenTestToolStripMenuItem";
-            this.writtenTestToolStripMenuItem.Size = new System.Drawing.Size(207, 34);
+            this.writtenTestToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
             this.writtenTestToolStripMenuItem.Text = "Written Test";
             // 
             // streetTestToolStripMenuItem
             // 
             this.streetTestToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("streetTestToolStripMenuItem.Image")));
             this.streetTestToolStripMenuItem.Name = "streetTestToolStripMenuItem";
-            this.streetTestToolStripMenuItem.Size = new System.Drawing.Size(207, 34);
+            this.streetTestToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
             this.streetTestToolStripMenuItem.Text = "Street Test";
             // 
             // deletePersonToolStripMenuItem
@@ -201,7 +202,7 @@
             this.deletePersonToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("deletePersonToolStripMenuItem.Image")));
             this.deletePersonToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.deletePersonToolStripMenuItem.Name = "deletePersonToolStripMenuItem";
-            this.deletePersonToolStripMenuItem.Size = new System.Drawing.Size(234, 72);
+            this.deletePersonToolStripMenuItem.Size = new System.Drawing.Size(288, 72);
             this.deletePersonToolStripMenuItem.Text = "Canceled";
             this.deletePersonToolStripMenuItem.Click += new System.EventHandler(this.deletePersonToolStripMenuItem_Click);
             // 
@@ -210,7 +211,7 @@
             this.sendEmailToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("sendEmailToolStripMenuItem.Image")));
             this.sendEmailToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.sendEmailToolStripMenuItem.Name = "sendEmailToolStripMenuItem";
-            this.sendEmailToolStripMenuItem.Size = new System.Drawing.Size(234, 72);
+            this.sendEmailToolStripMenuItem.Size = new System.Drawing.Size(288, 72);
             this.sendEmailToolStripMenuItem.Text = "Send Email";
             // 
             // callToolStripMenuItem
@@ -218,7 +219,7 @@
             this.callToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("callToolStripMenuItem.Image")));
             this.callToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.callToolStripMenuItem.Name = "callToolStripMenuItem";
-            this.callToolStripMenuItem.Size = new System.Drawing.Size(234, 72);
+            this.callToolStripMenuItem.Size = new System.Drawing.Size(288, 72);
             this.callToolStripMenuItem.Text = "Call";
             // 
             // dgvLocalDrivingsLA

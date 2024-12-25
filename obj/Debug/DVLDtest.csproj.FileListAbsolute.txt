@@ -38,5 +38,5 @@ D:\Programmin Advice\Project 19\DVLDtest\obj\Debug\DVLDtest.LocalDrivingsLA.ucDr
 D:\Programmin Advice\Project 19\DVLDtest\obj\Debug\DVLDtest.Applications.ucApplicationBasicInfo.resources
 D:\Programmin Advice\Project 19\DVLDtest\obj\Debug\DVLDtest.Appoiniments.frmVisionTestAppointments.resources
 D:\Programmin Advice\Project 19\DVLDtest\obj\Debug\DVLDtest.Appoiniments.Vision.frmScheduleTest.resources
-D:\Programmin Advice\Project 19\DVLDtest\obj\Debug\DVLDtest.Tests.ucTakeTest.resources
 D:\Programmin Advice\Project 19\DVLDtest\obj\Debug\DVLDtest.Appoiniments.Vision.frmTakeVisionTest.resources
+D:\Programmin Advice\Project 19\DVLDtest\obj\Debug\DVLDtest.Tests.frmTakeTest.resources

@@ -1,4 +1,5 @@
 ﻿using DVLDtest.Applications;
+using DVLDtest.Appoiniments;
 using LogicLayerDVLD;
 using System;
 using System.Collections.Generic;
@@ -151,6 +152,14 @@ namespace DVLDtest.LocalDrivingsLA
 
                 }
             }
+        }
+
+        private void visionTestToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            int localDrivingLAID = (int)dgvLocalDrivingsLA.CurrentRow.Cells[0].Value;
+            int applicationID = clsLocalDrivingLA.getApplicationByLocalDrivingID(localDrivingLAID);
+            frmVisionTestAppointments visionTestAppointments = new frmVisionTestAppointments(localDrivingLAID,applicationID,_createdUser);
+            visionTestAppointments.ShowDialog();
         }
     }
 }

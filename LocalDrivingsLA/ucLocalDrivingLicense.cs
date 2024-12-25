@@ -84,7 +84,7 @@ namespace DVLDtest.Applications
             application.applicantPersonID = ucPersonCardwithFilter1.personID;
             application.applicationTypeID = 1;
             application.applicationStatus = 1;
-            application.lastStatusDate = null;
+            application.lastStatusDate = DateTime.Now;
             application.paidFees = int.Parse(lblApplicationFees.Text);
             application.createdByUserID = _CreatedUserID;
             return application;

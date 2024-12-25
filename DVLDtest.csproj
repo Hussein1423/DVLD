@@ -63,10 +63,10 @@
     <Compile Include="Applications\ucApplicationBasicInfo.Designer.cs">
       <DependentUpon>ucApplicationBasicInfo.cs</DependentUpon>
     </Compile>
-    <Compile Include="Applications\ucLocalDrivingLicense.cs">
+    <Compile Include="LocalDrivingsLA\ucLocalDrivingLicense.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Applications\ucLocalDrivingLicense.Designer.cs">
+    <Compile Include="LocalDrivingsLA\ucLocalDrivingLicense.Designer.cs">
       <DependentUpon>ucLocalDrivingLicense.cs</DependentUpon>
     </Compile>
     <Compile Include="ApplicationTypes\frmUpdateApplicationType.cs">
@@ -161,6 +161,12 @@
     <Compile Include="People\ucPersonalCard.Designer.cs">
       <DependentUpon>ucPersonalCard.cs</DependentUpon>
     </Compile>
+    <Compile Include="Tests\frmTakeTest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tests\frmTakeTest.Designer.cs">
+      <DependentUpon>frmTakeTest.cs</DependentUpon>
+    </Compile>
     <Compile Include="Tests\ucTakeTest.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -221,7 +227,7 @@
     <EmbeddedResource Include="Applications\ucApplicationBasicInfo.resx">
       <DependentUpon>ucApplicationBasicInfo.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Applications\ucLocalDrivingLicense.resx">
+    <EmbeddedResource Include="LocalDrivingsLA\ucLocalDrivingLicense.resx">
       <DependentUpon>ucLocalDrivingLicense.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ApplicationTypes\frmUpdateApplicationType.resx">
@@ -279,8 +285,8 @@
     <EmbeddedResource Include="People\ucPersonalCard.resx">
       <DependentUpon>ucPersonalCard.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Tests\ucTakeTest.resx">
-      <DependentUpon>ucTakeTest.cs</DependentUpon>
+    <EmbeddedResource Include="Tests\frmTakeTest.resx">
+      <DependentUpon>frmTakeTest.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TestTypes\frmUpdateTest.resx">
       <DependentUpon>frmUpdateTest.cs</DependentUpon>
@@ -306,6 +312,7 @@
     <EmbeddedResource Include="Users\ucUserCard.resx">
       <DependentUpon>ucUserCard.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="ClassDiagram1.cd" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
