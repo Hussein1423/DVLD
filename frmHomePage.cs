@@ -1,9 +1,12 @@
 ﻿using DVLDtest.Applications;
 using DVLDtest.ApplicationTypes;
+using DVLDtest.Drivers;
+using DVLDtest.International;
 using DVLDtest.LocalDrivingsLA;
 using DVLDtest.People;
 using DVLDtest.TestTypes;
 using DVLDtest.Users;
+using LogicLayerDVLD;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -25,6 +28,7 @@ namespace DVLDtest
             InitializeComponent();
             _userID = userID;
             _personID = personID;
+            clsLicense license = new clsLicense();
         }
 
         public void addUserControlToScreen(UserControl userControl)
@@ -91,6 +95,23 @@ namespace DVLDtest
         {
             ucShowLocalDrivingsLA  ucShowLocal = new ucShowLocalDrivingsLA(_userID,_personID);
             addUserControlToScreen(ucShowLocal);
+        }
+
+        private void driversToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ucShowDrivers showDrivers = new ucShowDrivers();
+            addUserControlToScreen(showDrivers);
+        }
+
+        private void internationalLicenseApplicationsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ucShowInternationalLicenses showInternationalLicenses = new ucShowInternationalLicenses();
+            addUserControlToScreen(showInternationalLicenses);
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

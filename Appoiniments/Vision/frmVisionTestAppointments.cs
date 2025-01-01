@@ -17,6 +17,8 @@ namespace DVLDtest.Appoiniments
     public partial class frmVisionTestAppointments : Form
     {
         int _createdBy;
+        public delegate void HandlerEvent();
+        public HandlerEvent refresh;
         public frmVisionTestAppointments(int localDrivingID,int applicationID,int createdBy)
         {
             InitializeComponent();
@@ -24,7 +26,7 @@ namespace DVLDtest.Appoiniments
             ucDrivingLicenseApplicationInfo1.loadTheInfo();
             ucApplicationBasicInfo1.applicationID = applicationID;
             ucApplicationBasicInfo1.loadTheInfo();
-            dgvTests.DataSource = clsTest.getAllTestsforSpecificLocalDrivingLicense(localDrivingID);
+            dgvTests.DataSource = clsTest.getAllTestsforSpecificLocalDrivingLicense(localDrivingID,1);
             lblRecords.Text = dgvTests.RowCount.ToString(); 
             _createdBy = createdBy;
         }
@@ -44,14 +46,22 @@ namespace DVLDtest.Appoiniments
             if (!isFound)
             {
                 short rows =(short) dgvTests.Rows.Count; 
-                frmScheduleTest scheduleTest = new frmScheduleTest(ucDrivingLicenseApplicationInfo1._localDrivingLicenseApplicationID, ucDrivingLicenseApplicationInfo1.lblClass.Text, ucApplicationBasicInfo1.lblApplicant.Text, _createdBy,rows, ucApplicationBasicInfo1.lblApplicant.Text);
+                frmScheduleVisionTest scheduleTest = new frmScheduleVisionTest(ucDrivingLicenseApplicationInfo1._localDrivingLicenseApplicationID, ucDrivingLicenseApplicationInfo1.lblClass.Text, ucApplicationBasicInfo1.lblApplicant.Text, _createdBy,rows, ucApplicationBasicInfo1.lblApplicant.Text);
+                scheduleTest.refresh += refreshData;
                 scheduleTest.ShowDialog();
             }
+        }
+        private void refreshData()
+        {
+            dgvTests.DataSource = clsTest.getAllTestsforSpecificLocalDrivingLicense(ucDrivingLicenseApplicationInfo1._localDrivingLicenseApplicationID,1);
+            lblRecords.Text = dgvTests.RowCount.ToString();
         }
 
         private void gabClose_Click(object sender, EventArgs e)
         {
+            refresh?.Invoke();
             this.Close();
+
         }
 
         private void takeTestToolStripMenuItem_Click(object sender, EventArgs e)
@@ -70,6 +80,7 @@ namespace DVLDtest.Appoiniments
                 int testAppointmentID = (int)dgvTests.CurrentRow.Cells["TestAppointmentID"].Value;
                 int trial = dgvTests.Rows.Count;
                 frmTakeTest takeTest = new frmTakeTest(_createdBy,ucDrivingLicenseApplicationInfo1._localDrivingLicenseApplicationID, ucDrivingLicenseApplicationInfo1.lblClass.Text, ucApplicationBasicInfo1.lblApplicant.Text, dateTime, fees, testAppointmentID,trial);
+                takeTest.refresh += refreshData;
                 takeTest.ShowDialog();
             }
         }
@@ -89,10 +100,17 @@ namespace DVLDtest.Appoiniments
             {
                 int testAppointmentID =(int) dgvTests.CurrentRow.Cells["TestAppointmentID"].Value;
                 short rows = (short)dgvTests.Rows.Count;
-                frmScheduleTest scheduleTest = new frmScheduleTest(ucDrivingLicenseApplicationInfo1._localDrivingLicenseApplicationID, ucDrivingLicenseApplicationInfo1.lblClass.Text, ucApplicationBasicInfo1.lblApplicant.Text, _createdBy,rows, ucApplicationBasicInfo1.lblApplicant.Text, false,testAppointmentID);
+                frmScheduleVisionTest scheduleTest = new frmScheduleVisionTest(ucDrivingLicenseApplicationInfo1._localDrivingLicenseApplicationID, ucDrivingLicenseApplicationInfo1.lblClass.Text, ucApplicationBasicInfo1.lblApplicant.Text, _createdBy,rows, ucApplicationBasicInfo1.lblApplicant.Text, false,testAppointmentID);
+                scheduleTest.refresh += refreshData;
                 scheduleTest.ShowDialog();
             }
 
             }
+
+        private void frmVisionTestAppointments_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            refresh?.Invoke();
+            
+        }
     }
 }

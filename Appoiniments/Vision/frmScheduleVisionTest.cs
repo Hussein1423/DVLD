@@ -11,14 +11,16 @@ using System.Windows.Forms;
 
 namespace DVLDtest.Appoiniments.Vision
 {
-    public partial class frmScheduleTest : Form
+    public partial class frmScheduleVisionTest : Form
     {
+        public delegate void HandlerEvent();
+        public HandlerEvent refresh;
         int _createdBy;
         bool insert;
         int testAppointmentID;
         short _rows=0;
         string fullName = "";
-        public frmScheduleTest(int localDrivingLAID,string className,string name,int createdBy,short rows, string fullName = "", bool insert = true,int testAppointmentID=0)
+        public frmScheduleVisionTest(int localDrivingLAID,string className,string name,int createdBy,short rows, string fullName = "", bool insert = true,int testAppointmentID=0)
         {
             InitializeComponent();
             gdtpDate.MinDate = DateTime.Now;
@@ -40,6 +42,7 @@ namespace DVLDtest.Appoiniments.Vision
 
         private void gunaButton2_Click(object sender, EventArgs e)
         {
+            refresh?.Invoke();
             this.Close();
         }
 
@@ -102,6 +105,11 @@ namespace DVLDtest.Appoiniments.Vision
                 clsTestAppointment.updateTestAppointmentDate(testAppointmentID, DateTime.Parse(gdtpDate.Text));
                 MessageBox.Show("This Appointment Updated!!");
             }
+        }
+
+        private void frmScheduleTest_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            refresh?.Invoke();
         }
     }
 }

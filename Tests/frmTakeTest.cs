@@ -15,6 +15,8 @@ namespace DVLDtest.Tests
     {
         int _TestAppointment;
         int _CreatedBy;
+        public delegate void HandlerEvent();
+        public HandlerEvent refresh;
         public frmTakeTest(int createdBy,int DLappID,string className,string name,DateTime date,decimal fees,int testAppontmentID,int trial)
         {
             InitializeComponent();
@@ -47,6 +49,7 @@ namespace DVLDtest.Tests
             {
                 clsTestAppointment.updateTestAppointmentLocked(_TestAppointment, true);
                 MessageBox.Show("Successfully!!!");
+                gabSave.Enabled = false;
                 lblTestID.Text = test.testID.ToString();   
             }
             else
@@ -54,6 +57,17 @@ namespace DVLDtest.Tests
                 MessageBox.Show("Somethin wrong!!");
 
             }
+        }
+
+        private void gunaAdvenceButton2_Click(object sender, EventArgs e)
+        {
+            refresh?.Invoke();
+            this.Close();
+        }
+
+        private void frmTakeTest_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            refresh?.Invoke();
         }
     }
 }

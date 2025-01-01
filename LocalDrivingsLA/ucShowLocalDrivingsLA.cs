@@ -1,5 +1,9 @@
 ﻿using DVLDtest.Applications;
 using DVLDtest.Appoiniments;
+using DVLDtest.Appoiniments.Street;
+using DVLDtest.Appoiniments.Written;
+using DVLDtest.Licenses;
+using DVLDtest.People;
 using LogicLayerDVLD;
 using System;
 using System.Collections.Generic;
@@ -31,12 +35,20 @@ namespace DVLDtest.LocalDrivingsLA
             dgvLocalDrivingsLA.DataSource = data;
             lblRecords.Text = dgvLocalDrivingsLA.RowCount.ToString();  
         }
+
+        void refreshData()
+        {
+            dgvLocalDrivingsLA.DataSource = clsLocalDrivingLA.getAllLocalDrivingsLA();
+            lblRecords.Text = dgvLocalDrivingsLA.RowCount.ToString();
+        }
         public ucShowLocalDrivingsLA(int createdUser,int personID)
         {
             InitializeComponent();
             _refresh(clsLocalDrivingLA.getAllLocalDrivingsLA());
             _createdUser = createdUser;
             _PersonID = personID;
+            IssueToolStripMenuItem.Enabled = false;
+            ShowLicenseToolStripMenuItem.Enabled = false;
         }
 
         private void deletePersonToolStripMenuItem_Click(object sender, EventArgs e)
@@ -133,21 +145,54 @@ namespace DVLDtest.LocalDrivingsLA
                        visionTestToolStripMenuItem.Enabled = true;
                        writtenTestToolStripMenuItem.Enabled = false;
                        streetTestToolStripMenuItem.Enabled = false;
-                       break;
+                        ShowLicenseToolStripMenuItem.Enabled = false;
+                        IssueToolStripMenuItem.Enabled = false;
+                        TestToolStripMenuItem.Enabled = true;
+                        CancelApplicationToolStripMenuItem.Enabled = true;
+                        EditApplicationToolStripMenuItem.Enabled = true;
+                        deleteApplicationToolStripMenuItem.Enabled = true;
+                        break;
                     case 1:
                         visionTestToolStripMenuItem.Enabled= false;
                         writtenTestToolStripMenuItem.Enabled= true;
                         streetTestToolStripMenuItem.Enabled= false;
+                        ShowLicenseToolStripMenuItem.Enabled = false;
+                        IssueToolStripMenuItem.Enabled = false;
+                        TestToolStripMenuItem.Enabled = true;
+                        CancelApplicationToolStripMenuItem.Enabled = true;
+                        EditApplicationToolStripMenuItem.Enabled = true;
+                        deleteApplicationToolStripMenuItem.Enabled = true;
                         break;
                     case 2:
                         visionTestToolStripMenuItem.Enabled = false;
                         writtenTestToolStripMenuItem.Enabled = false;
                         streetTestToolStripMenuItem.Enabled = true;
+                        ShowLicenseToolStripMenuItem.Enabled = false;
+                        IssueToolStripMenuItem.Enabled = false;
+                        TestToolStripMenuItem.Enabled = true;
+                        CancelApplicationToolStripMenuItem.Enabled = true;
+                        EditApplicationToolStripMenuItem.Enabled = true;
+                        deleteApplicationToolStripMenuItem.Enabled = true;
                         break;
                     case 3:
                         visionTestToolStripMenuItem.Enabled = false;
                         writtenTestToolStripMenuItem.Enabled = false;
                         streetTestToolStripMenuItem.Enabled = false;
+                        TestToolStripMenuItem.Enabled = false;
+                        CancelApplicationToolStripMenuItem.Enabled = false;
+                        EditApplicationToolStripMenuItem.Enabled = false;
+                        deleteApplicationToolStripMenuItem.Enabled = false;
+                        string status = (string) dgvLocalDrivingsLA.CurrentRow.Cells[5].Value;
+                        if (status == "New")
+                        {
+                            IssueToolStripMenuItem.Enabled = true;
+                            ShowLicenseToolStripMenuItem.Enabled = false;
+                        }
+                        else
+                        {
+                            ShowLicenseToolStripMenuItem.Enabled = true;
+                            IssueToolStripMenuItem.Enabled = false;
+                        }
                         break;
 
                 }
@@ -159,7 +204,53 @@ namespace DVLDtest.LocalDrivingsLA
             int localDrivingLAID = (int)dgvLocalDrivingsLA.CurrentRow.Cells[0].Value;
             int applicationID = clsLocalDrivingLA.getApplicationByLocalDrivingID(localDrivingLAID);
             frmVisionTestAppointments visionTestAppointments = new frmVisionTestAppointments(localDrivingLAID,applicationID,_createdUser);
+            visionTestAppointments.refresh += refreshData;
             visionTestAppointments.ShowDialog();
+        }
+
+        private void writtenTestToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            int localDrivingLAID = (int)dgvLocalDrivingsLA.CurrentRow.Cells[0].Value;
+            int applicationID = clsLocalDrivingLA.getApplicationByLocalDrivingID(localDrivingLAID);
+            frmWrittenTestAppointments writtenTestAppointments = new frmWrittenTestAppointments(localDrivingLAID, applicationID, _createdUser);
+            writtenTestAppointments.refresh += refreshData;
+            writtenTestAppointments.ShowDialog();
+        }
+
+        private void streetTestToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            int localDrivingLAID = (int)dgvLocalDrivingsLA.CurrentRow.Cells[0].Value;
+            int applicationID = clsLocalDrivingLA.getApplicationByLocalDrivingID(localDrivingLAID);
+            frmStreetTestAppointments streetTestAppointments = new frmStreetTestAppointments(localDrivingLAID, applicationID, _createdUser);
+            streetTestAppointments.refresh += refreshData;
+            streetTestAppointments.ShowDialog();
+        }
+
+        private void callToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            int localDrivingLAID = (int)dgvLocalDrivingsLA.CurrentRow.Cells[0].Value;
+            int applicationID = clsLocalDrivingLA.getApplicationByLocalDrivingID(localDrivingLAID);
+            int licenseID = clsLicense.getLicenseIDByApplicationID(applicationID);
+            frmShowDriverLicense showDriverLicense = new frmShowDriverLicense(licenseID);
+            showDriverLicense.ShowDialog();
+        }
+
+        private void sendEmailToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            int localDrivingLAID = (int)dgvLocalDrivingsLA.CurrentRow.Cells[0].Value;
+            int applicationID = clsLocalDrivingLA.getApplicationByLocalDrivingID(localDrivingLAID);
+            frmIssueDriverLicense issueDriverLicense = new frmIssueDriverLicense(localDrivingLAID,applicationID,_createdUser);
+            issueDriverLicense.refresh += refreshData;
+            issueDriverLicense.ShowDialog();
+        }
+
+        private void showPersonLicenseHistoryToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            int localDrivingLAID = (int)dgvLocalDrivingsLA.CurrentRow.Cells[0].Value;
+            int applicationID = clsLocalDrivingLA.getApplicationByLocalDrivingID(localDrivingLAID);
+            int personID = clsApplication.getPersonIDByApplicationID(applicationID);
+            frmHistoryLicensePerson historyLicensePerson = new frmHistoryLicensePerson(personID);
+            historyLicensePerson.ShowDialog();
         }
     }
 }

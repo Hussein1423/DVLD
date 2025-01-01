@@ -40,6 +40,7 @@
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Management" />
+    <Reference Include="System.Messaging" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -63,6 +64,96 @@
     <Compile Include="Applications\ucApplicationBasicInfo.Designer.cs">
       <DependentUpon>ucApplicationBasicInfo.cs</DependentUpon>
     </Compile>
+    <Compile Include="Appoiniments\Street\frmScheduleStreetTest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Appoiniments\Street\frmScheduleStreetTest.Designer.cs">
+      <DependentUpon>frmScheduleStreetTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Appoiniments\Street\frmStreetTestAppointments.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Appoiniments\Street\frmStreetTestAppointments.Designer.cs">
+      <DependentUpon>frmStreetTestAppointments.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Appoiniments\Street\frmTakeStreetTest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Appoiniments\Street\frmTakeStreetTest.Designer.cs">
+      <DependentUpon>frmTakeStreetTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Appoiniments\Written\frmScheduleWrittenTest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Appoiniments\Written\frmScheduleWrittenTest.Designer.cs">
+      <DependentUpon>frmScheduleWrittenTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Appoiniments\Written\frmTakeWrittenTest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Appoiniments\Written\frmTakeWrittenTest.Designer.cs">
+      <DependentUpon>frmTakeWrittenTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Appoiniments\Written\frmWrittenTestAppointments.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Appoiniments\Written\frmWrittenTestAppointments.Designer.cs">
+      <DependentUpon>frmWrittenTestAppointments.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Drivers\ucShowDrivers.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Drivers\ucShowDrivers.Designer.cs">
+      <DependentUpon>ucShowDrivers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="International\frmAddInternationalLicense.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="International\frmAddInternationalLicense.Designer.cs">
+      <DependentUpon>frmAddInternationalLicense.cs</DependentUpon>
+    </Compile>
+    <Compile Include="International\frmShowDriverInternational.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="International\frmShowDriverInternational.Designer.cs">
+      <DependentUpon>frmShowDriverInternational.cs</DependentUpon>
+    </Compile>
+    <Compile Include="International\ucApplicationInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="International\ucApplicationInfo.Designer.cs">
+      <DependentUpon>ucApplicationInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="International\ucDriverInternationalInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="International\ucDriverInternationalInfo.Designer.cs">
+      <DependentUpon>ucDriverInternationalInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="International\ucShowInternationalLicenses.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="International\ucShowInternationalLicenses.Designer.cs">
+      <DependentUpon>ucShowInternationalLicenses.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Licenses\frmIssueDriverLicense.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Licenses\frmIssueDriverLicense.Designer.cs">
+      <DependentUpon>frmIssueDriverLicense.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Licenses\frmShowDriverLicense.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Licenses\frmShowDriverLicense.Designer.cs">
+      <DependentUpon>frmShowDriverLicense.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Licenses\ucDriverLicense.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Licenses\ucDriverLicense.Designer.cs">
+      <DependentUpon>ucDriverLicense.cs</DependentUpon>
+    </Compile>
     <Compile Include="LocalDrivingsLA\ucLocalDrivingLicense.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -81,11 +172,11 @@
     <Compile Include="ApplicationTypes\ucShowApplicationTypes.Designer.cs">
       <DependentUpon>ucShowApplicationTypes.cs</DependentUpon>
     </Compile>
-    <Compile Include="Appoiniments\Vision\frmScheduleTest.cs">
+    <Compile Include="Appoiniments\Vision\frmScheduleVisionTest.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Appoiniments\Vision\frmScheduleTest.Designer.cs">
-      <DependentUpon>frmScheduleTest.cs</DependentUpon>
+    <Compile Include="Appoiniments\Vision\frmScheduleVisionTest.Designer.cs">
+      <DependentUpon>frmScheduleVisionTest.cs</DependentUpon>
     </Compile>
     <Compile Include="Appoiniments\Vision\frmTakeVisionTest.cs">
       <SubType>Form</SubType>
@@ -128,6 +219,12 @@
     </Compile>
     <Compile Include="LocalDrivingsLA\ucShowLocalDrivingsLA.Designer.cs">
       <DependentUpon>ucShowLocalDrivingsLA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="People\frmHistoryLicensePerson.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="People\frmHistoryLicensePerson.Designer.cs">
+      <DependentUpon>frmHistoryLicensePerson.cs</DependentUpon>
     </Compile>
     <Compile Include="People\frmPersonForm.cs">
       <SubType>Form</SubType>
@@ -227,6 +324,51 @@
     <EmbeddedResource Include="Applications\ucApplicationBasicInfo.resx">
       <DependentUpon>ucApplicationBasicInfo.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Appoiniments\Street\frmScheduleStreetTest.resx">
+      <DependentUpon>frmScheduleStreetTest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Appoiniments\Street\frmStreetTestAppointments.resx">
+      <DependentUpon>frmStreetTestAppointments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Appoiniments\Street\frmTakeStreetTest.resx">
+      <DependentUpon>frmTakeStreetTest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Appoiniments\Written\frmScheduleWrittenTest.resx">
+      <DependentUpon>frmScheduleWrittenTest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Appoiniments\Written\frmTakeWrittenTest.resx">
+      <DependentUpon>frmTakeWrittenTest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Appoiniments\Written\frmWrittenTestAppointments.resx">
+      <DependentUpon>frmWrittenTestAppointments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Drivers\ucShowDrivers.resx">
+      <DependentUpon>ucShowDrivers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="International\frmAddInternationalLicense.resx">
+      <DependentUpon>frmAddInternationalLicense.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="International\frmShowDriverInternational.resx">
+      <DependentUpon>frmShowDriverInternational.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="International\ucApplicationInfo.resx">
+      <DependentUpon>ucApplicationInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="International\ucDriverInternationalInfo.resx">
+      <DependentUpon>ucDriverInternationalInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="International\ucShowInternationalLicenses.resx">
+      <DependentUpon>ucShowInternationalLicenses.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Licenses\frmIssueDriverLicense.resx">
+      <DependentUpon>frmIssueDriverLicense.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Licenses\frmShowDriverLicense.resx">
+      <DependentUpon>frmShowDriverLicense.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Licenses\ucDriverLicense.resx">
+      <DependentUpon>ucDriverLicense.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="LocalDrivingsLA\ucLocalDrivingLicense.resx">
       <DependentUpon>ucLocalDrivingLicense.cs</DependentUpon>
     </EmbeddedResource>
@@ -236,8 +378,8 @@
     <EmbeddedResource Include="ApplicationTypes\ucShowApplicationTypes.resx">
       <DependentUpon>ucShowApplicationTypes.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Appoiniments\Vision\frmScheduleTest.resx">
-      <DependentUpon>frmScheduleTest.cs</DependentUpon>
+    <EmbeddedResource Include="Appoiniments\Vision\frmScheduleVisionTest.resx">
+      <DependentUpon>frmScheduleVisionTest.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Appoiniments\Vision\frmTakeVisionTest.resx">
       <DependentUpon>frmTakeVisionTest.cs</DependentUpon>
@@ -259,6 +401,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="LocalDrivingsLA\ucShowLocalDrivingsLA.resx">
       <DependentUpon>ucShowLocalDrivingsLA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="People\frmHistoryLicensePerson.resx">
+      <DependentUpon>frmHistoryLicensePerson.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="People\frmPersonForm.resx">
       <DependentUpon>frmPersonForm.cs</DependentUpon>

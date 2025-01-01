@@ -312,6 +312,7 @@
             this.gunaAdvenceButton2.TabIndex = 43;
             this.gunaAdvenceButton2.Text = "Close";
             this.gunaAdvenceButton2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.gunaAdvenceButton2.Click += new System.EventHandler(this.gunaAdvenceButton2_Click);
             // 
             // frmTakeTest
             // 
@@ -342,7 +343,9 @@
             this.Controls.Add(this.lblScheduled);
             this.Controls.Add(this.pictureBox1);
             this.Name = "frmTakeTest";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmTakeTest";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.frmTakeTest_FormClosed);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

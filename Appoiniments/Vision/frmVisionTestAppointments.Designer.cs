@@ -90,13 +90,13 @@
             this.editDateToolStripMenuItem,
             this.takeTestToolStripMenuItem});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(249, 101);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(165, 68);
             // 
             // editDateToolStripMenuItem
             // 
             this.editDateToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("editDateToolStripMenuItem.Image")));
             this.editDateToolStripMenuItem.Name = "editDateToolStripMenuItem";
-            this.editDateToolStripMenuItem.Size = new System.Drawing.Size(248, 32);
+            this.editDateToolStripMenuItem.Size = new System.Drawing.Size(164, 32);
             this.editDateToolStripMenuItem.Text = "Edit Date";
             this.editDateToolStripMenuItem.Click += new System.EventHandler(this.editDateToolStripMenuItem_Click);
             // 
@@ -104,7 +104,7 @@
             // 
             this.takeTestToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("takeTestToolStripMenuItem.Image")));
             this.takeTestToolStripMenuItem.Name = "takeTestToolStripMenuItem";
-            this.takeTestToolStripMenuItem.Size = new System.Drawing.Size(248, 32);
+            this.takeTestToolStripMenuItem.Size = new System.Drawing.Size(164, 32);
             this.takeTestToolStripMenuItem.Text = "Take Test";
             this.takeTestToolStripMenuItem.Click += new System.EventHandler(this.takeTestToolStripMenuItem_Click);
             // 
@@ -130,7 +130,7 @@
             // 
             this.gabClose.AnimationHoverSpeed = 0.07F;
             this.gabClose.AnimationSpeed = 0.03F;
-            this.gabClose.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.gabClose.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.gabClose.BorderColor = System.Drawing.Color.Black;
             this.gabClose.DialogResult = System.Windows.Forms.DialogResult.None;
             this.gabClose.FocusedColor = System.Drawing.Color.Empty;
@@ -140,7 +140,7 @@
             this.gabClose.ImageSize = new System.Drawing.Size(20, 20);
             this.gabClose.Location = new System.Drawing.Point(776, 882);
             this.gabClose.Name = "gabClose";
-            this.gabClose.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.gabClose.OnHoverBaseColor = System.Drawing.Color.Red;
             this.gabClose.OnHoverBorderColor = System.Drawing.Color.Black;
             this.gabClose.OnHoverForeColor = System.Drawing.Color.White;
             this.gabClose.OnHoverImage = null;
@@ -164,7 +164,7 @@
             // 
             this.gabAddVision.AnimationHoverSpeed = 0.07F;
             this.gabAddVision.AnimationSpeed = 0.03F;
-            this.gabAddVision.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.gabAddVision.BaseColor = System.Drawing.Color.Green;
             this.gabAddVision.BorderColor = System.Drawing.Color.Black;
             this.gabAddVision.DialogResult = System.Windows.Forms.DialogResult.None;
             this.gabAddVision.FocusedColor = System.Drawing.Color.Empty;
@@ -175,7 +175,7 @@
             this.gabAddVision.ImageSize = new System.Drawing.Size(20, 20);
             this.gabAddVision.Location = new System.Drawing.Point(811, 670);
             this.gabAddVision.Name = "gabAddVision";
-            this.gabAddVision.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.gabAddVision.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.gabAddVision.OnHoverBorderColor = System.Drawing.Color.Black;
             this.gabAddVision.OnHoverForeColor = System.Drawing.Color.White;
             this.gabAddVision.OnHoverImage = null;
@@ -215,6 +215,7 @@
             this.Controls.Add(this.ucDrivingLicenseApplicationInfo1);
             this.Name = "frmVisionTestAppointments";
             this.Text = "frmVisionTestAppointments";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.frmVisionTestAppointments_FormClosed);
             ((System.ComponentModel.ISupportInitialize)(this.dgvTests)).EndInit();
             this.contextMenuStrip1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
